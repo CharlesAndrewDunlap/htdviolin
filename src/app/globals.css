@@ -67,12 +67,36 @@ body {
 }
 
 .title {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 25px;
     color: whitesmoke;
     font-size: xx-large;
+    font-style: italic;
+}
+
+#main-title {
+    margin-top: 30%;
+}
+
+.subtitle {
+    margin: 15px;
+    color: whitesmoke;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.horizontal-bar {
+    height: 3px;
+    background-color: #333;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.description-text {
+    margin: 15px;
+    width: 50%;
+    color: whitesmoke;
+    font-size: large;
+    font-style: italic;
 }
 
 .ting-vertical {
@@ -84,6 +108,10 @@ body {
 .content {
     height: 110vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .parallax-1 {
