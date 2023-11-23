@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -20,39 +22,42 @@ export default function RootLayout({
         <nav className='nav-bar'>
           <ul className='nav-bar-left'>
             <li>
-              <a href=''>Home</a>
+              <a href='' className='nav-item'>Home</a>
             </li>
             <li>
-              <a href=''>Music</a>
+              <a href='' className='nav-item'>Music</a>
             </li>
             <li>
-              <a href=''>Studio</a>
+              <a href='' className='nav-item'>Studio</a>
             </li>
           </ul>
           <ul className='nav-bar-right'>
             <li className='drop-down'>Professional
               <ul className='nav-drop-down'>
-                <li>
+                <li className='drop-down-item'>
                   Biography
+                <FontAwesomeIcon icon={faCircleDown} className='download-svg'/>
                 </li>
-                <li>
+                <li className='drop-down-item'>
                   Resume
+                  <FontAwesomeIcon icon={faCircleDown} className='download-svg'/>
                 </li>
-                <li>
+                <li className='drop-down-item'>
                   Headshot
+                  <FontAwesomeIcon icon={faCircleDown} className='download-svg'/>
                 </li>
               </ul>
             </li>
             <li>
-              <a href=''>Contact</a>
+              <a href='' className='nav-item'>Contact</a>
             </li>
             <li>
-              <a href=''>
+              <a href='' className='nav-item'>
                 Instagram
               </a>
             </li>
             <li>
-              <a href=''>Youtube</a>
+              <a href='' className='nav-item'>Youtube</a>
             </li>
           </ul>
         </nav>
