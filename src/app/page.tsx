@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react';
 import styles from './page.module.css';
 import { Parallax } from 'react-parallax';
 import Image from 'next/image';
@@ -9,6 +10,10 @@ export default function Home() {
   const tingVertical: string = '/tingvertical.jpg';
 
   const hymnProjectDescription = 'Becoming a violinist was not something I sat down and decided to do. It seemed to me rather that once I left that path, I could never go back. Maybe that is why, like a marriage, I still have to say yes to it every day. On days when music feels like a rat race, I try to conjure memories of when I was the most spiritually fulfilled - playing hymns for those who feel them deeply, and laying in tall prairie grass as a child, close to the Earth. This project is for experiencing both.'
+
+  useEffect(() => {
+    document.body.style.opacity = '1';
+  }, []);
 
   return (
     <div className='App'>
