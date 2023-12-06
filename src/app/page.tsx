@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import { Parallax } from 'react-parallax';
 import Image from 'next/image';
 import Fader from '@/components/fader';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   const [titleOpacity, setTitleOpacity] = useState(1);
@@ -66,9 +67,9 @@ export default function Home() {
 
       <Parallax bgImage={backgroundImage} strength={-500}>
         <div className='content'>
-          <div className='title'>Hoi Ting Davidson, Violin</div>
+          <ContactForm></ContactForm>
         </div>
-      </Parallax>
-    </div>
+      </Parallax >
+    </div >
   )
 }
