@@ -206,3 +206,7 @@ body {
     position: absolute;
     right: 6px;
 }
+
+.hymn-button {
+    z-index: 100;
+}

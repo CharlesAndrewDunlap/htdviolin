@@ -26,10 +26,10 @@ export default function RootLayout({
               <a href='' className='nav-item'>Home</a>
             </li>
             <li>
-              <a href='' className='nav-item'>Music</a>
+              <a href='' className='nav-item'>Studio</a>
             </li>
             <li>
-              <a href='' className='nav-item'>Studio</a>
+              <a href='/hymnProject' className='nav-item'>The Hymn Project</a>
             </li>
           </ul>
           <ul className='nav-bar-right'>
