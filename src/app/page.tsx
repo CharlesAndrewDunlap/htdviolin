@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import { Parallax } from 'react-parallax';
 import Image from 'next/image';
+import Fader from '@/components/fader';
 
 export default function Home() {
   const [titleOpacity, setTitleOpacity] = useState(1);
@@ -45,13 +46,9 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  //This is used to set the initial body of the page to be a dark grey to avoid FOUC caused by <Parallax> API.
-  useEffect(() => {
-    document.body.style.opacity = '1';
-  }, []);
-
   return (
     <div className='App'>
+      <Fader></Fader>
       <Parallax bgImage={backgroundImage} strength={600} className='parallax-1'>
         <div className='content'>
           <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson, Violin</h2>
