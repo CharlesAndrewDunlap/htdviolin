@@ -75,6 +75,7 @@ body {
 
 .drop-down:hover {
     cursor: pointer;
+    /* color: #edc43d; */
 }
 
 .drop-down-item {

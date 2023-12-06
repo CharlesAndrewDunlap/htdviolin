@@ -34,12 +34,12 @@ export default function RootLayout({
           </ul>
           <ul className='nav-bar-right'>
             <li>
-              <a href='' className='nav-item'>
+              <a href='https://www.instagram.com/ting_violin' className='nav-item'>
                 Instagram
               </a>
             </li>
             <li>
-              <a href='' className='nav-item'>Youtube</a>
+              <a href='https://www.youtube.com/@tingdavidson' className='nav-item'>Youtube</a>
             </li>
             <li>
               <a href='' className='nav-item'>Contact</a>
@@ -47,15 +47,15 @@ export default function RootLayout({
             <li className='drop-down'>Professional
               <ul className='nav-drop-down'>
                 <li className='drop-down-item'>
-                  Biography
+                  <a href='/HoiTingDavidsonBiography.pdf' download className='nav-item'>Biography</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
-                  Resume
+                  <a href='/HoiTingDavidsonPerformingCV.pdf' download className='nav-item'>Resume</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
-                  Headshot
+                  <a href='/HoiTingDavidsonHeadshot.png' download className='nav-item'>Headshot</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
               </ul>
