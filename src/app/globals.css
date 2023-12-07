@@ -211,3 +211,26 @@ body {
 .hymn-button {
     z-index: 100;
 }
+
+#contact-title {
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.form-item {
+    padding: 5px;
+    margin-top: 5px;
+    outline: #edc43d;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form-message {
+    height: 200px;
+    resize: both;
+}
