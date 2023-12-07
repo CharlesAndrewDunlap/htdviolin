@@ -11,9 +11,17 @@ export default function ContactForm() {
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
-        await fetch('/contact', {
+        const sentData: Response = await fetch('/contact', {
             method: 'POST',
-            
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            }
         })
     }
 
