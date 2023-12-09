@@ -38,7 +38,6 @@ export default function Home() {
         const scrollY = window.scrollY;
         const titleRect = mainTitle.getBoundingClientRect();
         const newOpacity = Math.max(4 - (scrollY - titleRect.top) / 600, 0);
-        console.log('opacity: ', newOpacity);
         setHymnContentOpacity(newOpacity);
       }
     }
