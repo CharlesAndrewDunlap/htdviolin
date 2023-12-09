@@ -47,7 +47,7 @@ export default function RootLayout({
             <li className='drop-down'>Professional
               <ul className='nav-drop-down'>
                 <li className='drop-down-item'>
-                  <a href='/HoiTingDavidsonBiography.pdf' download className='nav-item'>Biography</a>
+                  <a href='/HoiTingDavidsonBiography.pdf' download className='nav-item'>Artist Biography</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
@@ -55,7 +55,7 @@ export default function RootLayout({
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
-                  <a href='/HoiTingDavidsonHeadshot.png' download className='nav-item'>Headshot</a>
+                  <a href='/HoiTingDavidsonHeadshot.png' download className='nav-item'>Photo</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
               </ul>

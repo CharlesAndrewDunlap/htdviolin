@@ -10,6 +10,21 @@
     }
 }
 
+@keyframes slideDown {
+    to {
+        top: 20px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 20px;
+    }
+    to {
+        top: -100px;
+    }
+}
+
 /* @keyframes slideOutToRight {
     0% {
         transform: translateX(0);
@@ -233,4 +248,30 @@ body {
 #form-message {
     height: 200px;
     resize: both;
+}
+
+.confirmation-message {
+    position: fixed;
+    top: -50px;
+    left: 50vw;
+    transform: translateX(-50%);
+    background-color: rgb(24, 186, 32);
+    background-image: linear-gradient(to right, rgba(24, 186, 32, 0.9), rgba(24, 206, 32, 0.9));
+    color: whitesmoke;
+    padding: 30px;
+    width: 10vw;
+    border-radius: 5px;
+    animation-name: slideDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    opacity: 0.95;
+}
+
+.confirmation-message.exit {
+    animation-name: slideUp;
 }
