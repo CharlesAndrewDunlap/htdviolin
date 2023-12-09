@@ -12,7 +12,8 @@ export default function ContactForm() {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-
+        const button = e.currentTarget.querySelector('#submit-button');
+        console.log('here is the button:', button);
         const sentData: Response = await fetch('/contact', {
             method: 'POST',
             body: JSON.stringify({
@@ -27,15 +28,17 @@ export default function ContactForm() {
         })
 
         if (sentData.status === 200) {
-            displaySuccess();
+            displaySuccess(button);
         } 
     }
 
-    function displaySuccess() {
+    function displaySuccess(button) {
         setSentMessage(true);
+        button.classList.add('submit-button-success');
 
         setTimeout(() => {
             setAnimationType('exit')
+            button.classList.remove('submit-button-success');
             setTimeout(() => setSentMessage(false), 500);
         }, 3000)
     }
@@ -50,7 +53,7 @@ export default function ContactForm() {
                 <input className='form-item' type='text' placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)}></input>
                 <input className='form-item' type='text' placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)}></input>
                 <textarea className='form-item' id='form-message' placeholder='Message. . .' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                <button className='form-item' type='submit'>Submit</button>
+                <button className='form-item' id='submit-button' type='submit'>Submit</button>
             </form>
             </div>
         </div>

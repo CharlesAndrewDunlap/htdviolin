@@ -250,13 +250,27 @@ body {
     resize: both;
 }
 
+#submit-button {
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#submit-button:hover {
+    background-color: #edc43d
+}
+
+#submit-button.submit-button-success {
+    background-color: rgba(24, 186, 32, 0.9);
+}
+
 .confirmation-message {
     position: fixed;
     top: -50px;
     left: 50vw;
     transform: translateX(-50%);
     background-color: rgb(24, 186, 32);
-    background-image: linear-gradient(to right, rgba(24, 186, 32, 0.9), rgba(24, 206, 32, 0.9));
+    background-image: linear-gradient(to right, rgba(24, 186, 32, 0.9) 75%, rgba(24, 206, 32, 0.9) 100%);
     color: whitesmoke;
     padding: 30px;
     width: 10vw;
