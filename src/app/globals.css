@@ -11,6 +11,9 @@
 }
 
 @keyframes slideDown {
+    from {
+        top: -100px;
+    }
     to {
         top: 20px;
     }
@@ -257,11 +260,11 @@ body {
 }
 
 #submit-button:hover {
-    background-color: #edc43d
+    background-color: #6e74e3;
 }
 
 #submit-button.submit-button-success {
-    background-color: rgba(24, 186, 32, 0.9);
+    background-color: #646bec;
 }
 
 .confirmation-message {
@@ -269,11 +272,11 @@ body {
     top: -50px;
     left: 50vw;
     transform: translateX(-50%);
-    background-color: rgb(24, 186, 32);
-    background-image: linear-gradient(to right, rgba(24, 186, 32, 0.9) 75%, rgba(24, 206, 32, 0.9) 100%);
+    background-color: #646bec;
+    background-image: linear-gradient(to right, #6e74e3 75%, #646bec) 100%;
     color: whitesmoke;
-    padding: 30px;
-    width: 10vw;
+    padding: 20px;
+    width: 15vw;
     border-radius: 5px;
     animation-name: slideDown;
     animation-duration: 0.5s;
