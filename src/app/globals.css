@@ -257,10 +257,6 @@ body {
     transition: background-color 0.5s ease-in-out;
 }
 
-#submit-button:hover {
-    background-color: #6e74e3;
-}
-
 #submit-button.submit-button-success {
     background-color: #646bec;
 }

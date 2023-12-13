@@ -17,23 +17,47 @@ export default function ContactForm() {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        const button = e.currentTarget.querySelector('#submit-button');
-        const sentData: Response = await fetch('/contact', {
-            method: 'POST',
-            body: JSON.stringify({
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            }),
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        })
+        const regex: RegExp = /[@]/g
 
-        if (sentData.status === 200) {
-            displaySuccess(button);
-        } 
+        if (name === '') {
+            alert('Please enter a valid name.');
+            return;
+        }
+        else if (!regex.test(email)) {
+            alert('Please enter a valid e-mail.');
+            return;
+        }
+        else if (subject === '') {
+            alert('Please enter a subject.');
+            return;
+        }
+        else if (message === '') {
+            alert('Please enter a message.');
+            return;
+        }
+        else if (!isVerified) {
+            alert('Please check the ReCAPTCHA box before submitting.');
+            return;
+        }
+        else {  
+            const button = e.currentTarget.querySelector('#submit-button');
+            const sentData: Response = await fetch('/contact', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                }),
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+    
+            if (sentData.status === 200) {
+                displaySuccess(button);
+            } 
+        }
     }
 
     async function handleCaptchaSubmission(token: string | null) {
