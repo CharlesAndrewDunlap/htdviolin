@@ -17,7 +17,7 @@ export default function ContactForm() {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        const regex: RegExp = /[@]/g
+        const regex: RegExp = /[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+\.[a-zA-Z]{2,}/
 
         if (name === '') {
             alert('Please enter a valid name.');
@@ -56,6 +56,13 @@ export default function ContactForm() {
     
             if (sentData.status === 200) {
                 displaySuccess(button);
+                setTimeout(() => {
+                    setName('');
+                    setEmail('');
+                    setSubject('');
+                    setMessage('');
+                    setIsVerified(false);
+                }, 1000);
             } 
         }
     }
