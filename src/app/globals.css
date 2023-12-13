@@ -93,7 +93,6 @@ body {
 
 .drop-down:hover {
     cursor: pointer;
-    /* color: #edc43d; */
 }
 
 .drop-down-item {
@@ -145,7 +144,6 @@ body {
 }
 
 .nav-item:hover {
-    /* color: rgb(235, 232, 24); */
     color: #edc43d;
 }
 
@@ -291,4 +289,9 @@ body {
 
 .confirmation-message.exit {
     animation-name: slideUp;
+}
+
+.captcha {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
