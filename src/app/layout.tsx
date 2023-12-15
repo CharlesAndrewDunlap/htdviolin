@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
+import ScrollElement from '../components/ScrollElement';
 import './globals.css';
-import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'Hoi Ting Davidson, Violinist',
@@ -35,15 +35,15 @@ export default function RootLayout({
           </ul>
           <ul className='nav-bar-right'>
             <li>
-              <a href='https://www.instagram.com/ting_violin' className='nav-item'>
+              <a href='https://www.instagram.com/ting_violin' target='_blank' className='nav-item'>
                 Instagram
               </a>
             </li>
             <li>
-              <a href='https://www.youtube.com/@tingdavidson' className='nav-item'>Youtube</a>
+              <a href='https://www.youtube.com/@tingdavidson' target='_blank' className='nav-item'>Youtube</a>
             </li>
             <li>
-              <a href='' className='nav-item'>Contact</a>
+              <ScrollElement/>
             </li>
             <li className='drop-down'>Professional
               <ul className='nav-drop-down'>

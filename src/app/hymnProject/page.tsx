@@ -1,4 +1,4 @@
-import Fader from "@/components/fader"
+import Fader from "@/components/Fader"
 
 export default function HymnProject() {
 

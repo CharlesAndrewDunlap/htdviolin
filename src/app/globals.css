@@ -246,6 +246,17 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+input, textarea {
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 2px solid transparent;
+    box-shadow: none;
+}
+
+input:focus, textarea:focus {
+    border: #edc43d;
+    box-shadow: 0 0 0 2px #edc43d;
+}
+
 #form-message {
     height: 200px;
     resize: both;
