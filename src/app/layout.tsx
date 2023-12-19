@@ -14,6 +14,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  let style = children.props.childProp.segment === 'hymnProject' ? 'nav-item-hymn' : 'nav-item';
+  console.log('here are the children: ', children.props.childProp.segment);
   return (
     <html lang='en'>
       <head>
@@ -24,23 +27,23 @@ export default function RootLayout({
         <nav className='nav-bar'>
           <ul className='nav-bar-left'>
             <li>
-              <a href='' className='nav-item'>Home</a>
+              <a href='' className={style}>Home</a>
             </li>
             <li>
-              <a href='' className='nav-item'>Studio</a>
+              <a href='' className={style}>Studio</a>
             </li>
             <li>
-              <a href='/hymnProject' className='nav-item'>The Hymn Project</a>
+              <a href='/hymnProject' className={style}>The Hymn Project</a>
             </li>
           </ul>
           <ul className='nav-bar-right'>
             <li>
-              <a href='https://www.instagram.com/ting_violin' target='_blank' className='nav-item'>
+              <a href='https://www.instagram.com/ting_violin' target='_blank' className={style}>
                 Instagram
               </a>
             </li>
             <li>
-              <a href='https://www.youtube.com/@tingdavidson' target='_blank' className='nav-item'>Youtube</a>
+              <a href='https://www.youtube.com/@tingdavidson' target='_blank' className={style}>Youtube</a>
             </li>
             <li>
               <ScrollElement/>
@@ -48,15 +51,15 @@ export default function RootLayout({
             <li className='drop-down'>Professional
               <ul className='nav-drop-down'>
                 <li className='drop-down-item'>
-                  <a href='/HoiTingDavidsonBiography.pdf' download className='nav-item'>Artist Biography</a>
+                  <a href='/HoiTingDavidsonBiography.pdf' download className={style}>Artist Biography</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
-                  <a href='/HoiTingDavidsonPerformingCV.pdf' download className='nav-item'>Resume</a>
+                  <a href='/HoiTingDavidsonPerformingCV.pdf' download className={style}>Resume</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
                 <li className='drop-down-item'>
-                  <a href='/HoiTingDavidsonHeadshot.png' download className='nav-item'>Photo</a>
+                  <a href='/HoiTingDavidsonHeadshot.png' download className={style}>Photo</a>
                   <FontAwesomeIcon icon={faCircleDown} className='download-svg' />
                 </li>
               </ul>

@@ -147,6 +147,12 @@ body {
     color: #edc43d;
 }
 
+.nav-item-hymn {
+    text-decoration: none;
+    color: #edc43d;
+    transition: color 0.4s ease-in-out;
+}
+
 .background-image {
     margin-top: -80px;
 }
@@ -301,4 +307,10 @@ input:focus, textarea:focus {
 .captcha {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.hymn-project-background {
+    position: fixed;
+    top: 0;
+    z-index: -1;
 }

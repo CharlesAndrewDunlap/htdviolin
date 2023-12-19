@@ -4,8 +4,7 @@ export default function HymnProject() {
 
     return (
         <>
-        <button style={{height: '100vw'}}>Hi</button>
-        <button>Hello</button>
+        <video src="HymnProjectBackgroundFinal.mp4" className="hymn-project-background" controls autoPlay muted loop></video>
         <Fader></Fader>
         </>
     )
