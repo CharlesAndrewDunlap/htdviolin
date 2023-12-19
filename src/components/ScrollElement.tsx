@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const ScrollElement = () => {
+const ScrollElement = ({ className }) => {
     const smoothScrollToBottom = (duration: number) => {
         const targetPosition = document.documentElement.scrollHeight - window.innerHeight;
         const startPosition = window.scrollY
@@ -34,7 +34,7 @@ const ScrollElement = () => {
          
 
     return (
-        <a href='#!' onClick={scrollToBottom} className='nav-item'>Contact</a>
+        <a href='#!' onClick={scrollToBottom} className={className}>Contact</a>
     )
 }
 

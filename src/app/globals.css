@@ -95,6 +95,14 @@ body {
     cursor: pointer;
 }
 
+.drop-down-hymn {
+    color: #edc43d;
+}
+
+.drop-down-hymn:hover {
+    cursor: pointer;
+}
+
 .drop-down-item {
     width: 100%;
     height: 40px;
@@ -128,7 +136,8 @@ body {
     color: #edc43d;
 }
 
-.drop-down:hover .nav-drop-down {
+.drop-down:hover .nav-drop-down,
+.drop-down-hymn:hover .nav-drop-down {
     display: block;
 }
 
@@ -312,5 +321,10 @@ input:focus, textarea:focus {
 .hymn-project-background {
     position: fixed;
     top: 0;
-    z-index: -1;
+    z-index: -1000;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
 }

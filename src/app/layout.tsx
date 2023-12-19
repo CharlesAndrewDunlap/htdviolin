@@ -16,7 +16,8 @@ export default function RootLayout({
 }) {
 
   let style = children.props.childProp.segment === 'hymnProject' ? 'nav-item-hymn' : 'nav-item';
-  console.log('here are the children: ', children.props.childProp.segment);
+  let dropDownStyle = children.props.childProp.segment === 'hymnProject' ? 'drop-down-hymn' : 'drop-down';
+  
   return (
     <html lang='en'>
       <head>
@@ -46,9 +47,9 @@ export default function RootLayout({
               <a href='https://www.youtube.com/@tingdavidson' target='_blank' className={style}>Youtube</a>
             </li>
             <li>
-              <ScrollElement/>
+              <ScrollElement className={style}/>
             </li>
-            <li className='drop-down'>Professional
+            <li className={dropDownStyle}>Professional
               <ul className='nav-drop-down'>
                 <li className='drop-down-item'>
                   <a href='/HoiTingDavidsonBiography.pdf' download className={style}>Artist Biography</a>
