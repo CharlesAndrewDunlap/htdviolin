@@ -28,7 +28,7 @@ export default function RootLayout({
         <nav className='nav-bar'>
           <ul className='nav-bar-left'>
             <li>
-              <a href='' className={style}>Home</a>
+              <a href='/' className={style}>Home</a>
             </li>
             <li>
               <a href='' className={style}>Studio</a>

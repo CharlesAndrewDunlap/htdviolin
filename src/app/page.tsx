@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <div className='App'>
       <Fader></Fader>
-      <Parallax bgImage={backgroundImage} strength={600} className='parallax-1'>
+      <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
         <div className='content'>
           <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson, Violin</h2>
         </div>

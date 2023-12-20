@@ -100,6 +100,10 @@ body {
 }
 
 .drop-down-hymn:hover {
+    color: #f1b103;
+}
+
+.drop-down-hymn:hover {
     cursor: pointer;
 }
 
@@ -160,6 +164,10 @@ body {
     text-decoration: none;
     color: #edc43d;
     transition: color 0.4s ease-in-out;
+}
+
+.nav-item-hymn:hover {
+    color: #f1b103;
 }
 
 .background-image {
@@ -327,4 +335,12 @@ input:focus, textarea:focus {
 .background {
     height: 100vh;
     width: 100vw;
+}
+
+#hymn-project-content-1 {
+    background-color: rgb(0, 0, 0);
+}
+
+.hymn-project-content-title {
+    color: #edc43d;
 }
