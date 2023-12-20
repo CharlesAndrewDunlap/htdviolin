@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel='preload' href='/TingBackground.jpg' as='image'></link>
+        {/* <link rel='preload' href='/TingBackground.jpg' as='image'></link> */}
         <script src='https://www.google.com/recaptcha/api.js' async defer></script>
       </head>
       <body>
@@ -31,7 +31,7 @@ export default function RootLayout({
               <a href='/' className={style}>Home</a>
             </li>
             <li>
-              <a href='' className={style}>Studio</a>
+              <a href='/studio' className={style}>Studio</a>
             </li>
             <li>
               <a href='/hymnProject' className={style}>The Hymn Project</a>
