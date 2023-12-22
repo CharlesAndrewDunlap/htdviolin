@@ -55,7 +55,7 @@ body {
 body {
     opacity: 0;
     transition: opacity 1.7s ease-in-out;
-    background-color: #333;
+    background-color: whitesmoke;
 }
 
 .nav-bar {
@@ -343,4 +343,44 @@ input:focus, textarea:focus {
 
 .hymn-project-content-title {
     color: #edc43d;
+}
+
+#studio-banner {
+    height: 40vh;
+    background-color: #edc43d;
+    width: 100vw;
+}
+
+.studio-banner-title {
+    font-style: italic;
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.studio-banner-subtitle {
+    font-size: 30px;
+    margin-right: 26%;
+    font-weight: lighter;
+}
+
+#mission-content {
+    flex-direction: row;
+}
+
+#suzuki-div {
+    width: 33vw;;
+}
+
+#suzuki-quote {
+    width: 40%;
+    line-height: 200%;
+}
+
+#mission-statement {
+    width: 33vw;
+}
+
+#suzuki-signature {
+    font-style: italic;
+    
 }
