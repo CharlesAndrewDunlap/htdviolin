@@ -382,5 +382,14 @@ input:focus, textarea:focus {
 
 #suzuki-signature {
     font-style: italic;
-    
+    font-size: larger;
+}
+
+#mission-title {
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+#mission-statement {
+    line-height: 150%;
 }
