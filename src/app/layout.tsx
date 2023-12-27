@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
+import { Montserrat } from 'next/font/google';
 import ScrollElement from '../components/ScrollElement';
 import './globals.css';
 
@@ -8,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Hoi Ting Davidson, Violinist',
   description: 'The official website of Hoi Ting Davidson.',
 }
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '600']
+})
 
 export default function RootLayout({
   children,
@@ -19,9 +26,10 @@ export default function RootLayout({
   let dropDownStyle = children.props.childProp.segment === 'hymnProject' ? 'drop-down-hymn' : 'drop-down';
   
   return (
-    <html lang='en'>
+    <html lang='en' className={montserrat.className}>
       <head>
         {/* <link rel='preload' href='/TingBackground.jpg' as='image'></link> */}
+        {/* <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional' rel='stylesheet'></link> */}
         <script src='https://www.google.com/recaptcha/api.js' async defer></script>
       </head>
       <body>

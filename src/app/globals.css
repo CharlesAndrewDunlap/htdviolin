@@ -365,31 +365,55 @@ input:focus, textarea:focus {
 
 #mission-content {
     flex-direction: row;
+    height: 75vh;
 }
 
 #suzuki-div {
-    width: 33vw;;
+    width: 33vw;
 }
 
 #suzuki-quote {
-    width: 40%;
+    width: 60%;
     line-height: 200%;
+    font-size: 20px;
 }
 
 #mission-statement {
-    width: 33vw;
+    width: 40vw;
 }
 
 #suzuki-signature {
     font-style: italic;
-    font-size: larger;
+    font-size: 30px;
 }
 
 #mission-title {
-    font-weight: bolder;
     margin-bottom: 1em;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 #mission-statement {
     line-height: 150%;
+    font-size: 20px;
+}
+
+.studio-landing-content {
+    height: 100%;
+}
+
+#location {
+    flex-direction: row;
+}
+
+#location-div {
+    width: 50%;
+}
+
+#ting-image {
+    width: 50%;
+}
+
+.ting-sitting {
+    float: right;
 }
