@@ -415,5 +415,9 @@ input:focus, textarea:focus {
 }
 
 .ting-sitting {
-    float: right;
+    float: center;
+}
+
+#location-text-content {
+    width: 40%;
 }

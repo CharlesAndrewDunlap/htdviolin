@@ -25,11 +25,14 @@ export default function Studio() {
                 </div>
             </div>
             <div className='content' id='location'>
-                <div id='location-div'>
-                    <h3>Location</h3>
-                    <p>{currentLocation}</p>
+                <div className='location-div'>
+                    <div>l</div>
+                    <div id='location-text-content'>
+                        <h3>Location</h3>
+                        <p>{currentLocation}</p>
+                    </div>
                 </div>
-                <div id='ting-image'>
+                <div className='location-div'>
                 <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting'></Image>
                 </div>
             </div>
