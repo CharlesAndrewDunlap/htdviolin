@@ -445,3 +445,45 @@ input:focus, textarea:focus {
     display: flex;
     margin: 6vw;
 }
+
+#suzuki-method {
+    background-color: #333;
+    flex-direction: row;
+}
+
+.suzuki-method {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+}
+
+#suzuki-method-text {
+    line-height: 150%;
+}
+
+#suzuki-method-title {
+    margin-bottom: 1.5em;
+}
+
+#SAA-link {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#SAA-link:hover {
+    color: #edc43d;
+    border-color: #edc43d;
+}
+
+.pricing-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    color: whitesmoke;
+}

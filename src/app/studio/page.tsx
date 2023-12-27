@@ -8,6 +8,8 @@ export default function Studio() {
     const missionStatement1: string = 'I believe in creating an engaging, positive setting which encourages students to approach music and all aspects of their lives with an inquisitive mind. While developing strong technique and a fundamental understanding of music, the lessons of violin will extend far beyond playing the instrument by rote, helping them become more \'noble human beings.\' As a teacher, I am attuned to the different strengths and needs of each student, helping them meet their own goals and encouraging them to reach further as they develop new ones.';
     const missionStatement2: string = 'A life-long learner, my dedication to violin has become an invaluable means of setting aside time to ask questions and challenge myself, skills I seek to share with my studio. I am excited to encourage my students to ask their own questions and to share their music with others.';
     const currentLocation: string = 'Centrally located near the S. Bellaire neighborhood, we offer lessons on site or in  your home.';
+    const suzukiMethod1: string = '“Musical ability is not an inborn talent but an ability which can be developed. Any child who is properly trained can develop musical ability, just as all children develop the ability to speak their mother tongue. The potential of every child is unlimited.”';
+    const suzukiMethod2: string = '"More than fifty years ago, Japanese violinist Shinichi Suzuki realized the implications of the fact that children the world over learn to speak their native language with ease. He began to apply the basic principles of language acquisition to the learning of music, and called his method the mother-tongue approach. The ideas of parent responsibility, loving encouragement, constant repetition, etc., are some of the special features of the Suzuki approach."';
 
     return (
         <>
@@ -38,8 +40,20 @@ export default function Studio() {
                 <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting' />
                 </div>
             </div>
-            <div className='content'>
-                <h2>Content Block 3</h2>
+            <div className='content' id='suzuki-method'>
+                <div className='suzuki-method'>
+                    <LineDecoration />
+                    <div id='suzuki-method-text'>
+                        <h3 id='suzuki-method-title'>The Suzuki Method</h3>
+                        <div>{suzukiMethod1}<br></br><br></br>S. Suzuki</div>
+                        <br></br><br></br>
+                        <div>{suzukiMethod2}</div><br></br><div style={{fontStyle: 'italic', marginBottom: '15px'}}>Read more from the Suzuki Association</div>
+                        <a href='https://suzukiassociation.org/about/suzuki-method/' id='SAA-link'>Learn More</a>
+                    </div>
+                </div>
+                <div className='pricing-right'>
+                    this is the right
+                </div>
             </div>
             <Fader />
             <div className='content'>
