@@ -1,5 +1,6 @@
 import ContactForm from '@/components/ContactForm';
 import Fader from '@/components/Fader';
+import LineDecoration from '@/components/LineDecoration';
 import Image from 'next/image';
 
 export default function Studio() {
@@ -25,23 +26,24 @@ export default function Studio() {
                 </div>
             </div>
             <div className='content' id='location'>
-                <div className='location-div'>
-                    <div>l</div>
+                <div className='location-div' id='location-text'>
+                    <LineDecoration />
                     <div id='location-text-content'>
                         <h3>Location</h3>
+                        <br></br>
                         <p>{currentLocation}</p>
                     </div>
                 </div>
                 <div className='location-div'>
-                <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting'></Image>
+                <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting' />
                 </div>
             </div>
             <div className='content'>
                 <h2>Content Block 3</h2>
             </div>
-            <Fader></Fader>
+            <Fader />
             <div className='content'>
-                <ContactForm></ContactForm>
+                <ContactForm />
             </div>
         </>
     );
