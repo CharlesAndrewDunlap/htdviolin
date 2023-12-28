@@ -1,7 +1,12 @@
 'use client';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, ReactComponentElement } from 'react';
 
-export default function LineDecoration() {
+interface LineDecorationProps {
+    color: string;
+    height: number;
+}
+
+export default function LineDecoration({ color, height }: LineDecorationProps): JSX.Element {
     const [scrollPercent, setScrollPercent] = useState(0);
     const maxScroll = useRef(0);
 
@@ -19,8 +24,8 @@ export default function LineDecoration() {
 
     return (
         <div className='line-decoration'>
-            <div className='thin-line'></div>
-            <div className='thick-line' style={{transform: `translateY(${scrollPercent * 300}%)`}}></div>
+            <div className='thin-line' style={{borderRight: `1px solid ${color}`, height: `${height}vh`}}></div>
+            <div className='thick-line' style={{borderLeft: `3px solid ${color}`, height: `${height / 2.3}vh`, transform: `translateY(${scrollPercent * 200}%)`}}></div>
         </div>
     )
 }

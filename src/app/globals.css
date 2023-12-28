@@ -431,17 +431,6 @@ input:focus, textarea:focus {
     width: 40%;
 }
 
-.thin-line {
-    border-right: 1px solid black;
-    height: 20vh;
-}
-
-.thick-line {
-    border-left: 3px solid rgb(71, 71, 71);
-    height: 8vh;
-    
-}
-
 .line-decoration {
     display: flex;
     margin: 6vw;
@@ -544,4 +533,32 @@ input:focus, textarea:focus {
 .scroll-element-div {
     margin: 20px;
     margin-top: auto;
+}
+
+#practicing-element {
+    height: auto;
+    padding: 50px;
+}
+
+#practice-title {
+    font-weight: 100;
+    color: #b3b3b3;
+    padding: 10px;
+    margin: 5px;
+}
+
+#practice-text {
+    padding: 5px;
+    line-height: 150%;
+}
+
+#practice-bullet-points {
+    padding-left: 30px;
+    font-size: 15.5px;
+    font-weight: 100;
+    color: #b3b3b3;
+}
+
+#practice-bullet-points li {
+    padding-top: 10px;
 }

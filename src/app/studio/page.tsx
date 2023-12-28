@@ -11,6 +11,8 @@ export default function Studio() {
     const currentLocation: string = 'Centrally located near the S. Bellaire neighborhood, we offer lessons on site or in  your home.';
     const suzukiMethod1: string = '“Musical ability is not an inborn talent but an ability which can be developed. Any child who is properly trained can develop musical ability, just as all children develop the ability to speak their mother tongue. The potential of every child is unlimited.”';
     const suzukiMethod2: string = '"More than fifty years ago, Japanese violinist Shinichi Suzuki realized the implications of the fact that children the world over learn to speak their native language with ease. He began to apply the basic principles of language acquisition to the learning of music, and called his method the mother-tongue approach. The ideas of parent responsibility, loving encouragement, constant repetition, etc., are some of the special features of the Suzuki approach."';
+    const practicingStatement: string = 'In each lesson, I will work with students to set practical goals for practicing. I expect every student to put in effort with their music in order to improve and make the lesson a more enjoyable and time efficient space.';
+    const parentInvolvement: string = 'The Suzuki Method involves parents as an integral part of the learning process for younger students. Many Suzuki parents will learn to play the first piece in Book 1 ahead of their child to understand what the student is expected to do.';
 
     return (
         <>
@@ -30,7 +32,7 @@ export default function Studio() {
             </div>
             <div className='content' id='location'>
                 <div className='location-div' id='location-text'>
-                    <LineDecoration />
+                    <LineDecoration color='black' height={20}/>
                     <div id='location-text-content'>
                         <h3>Location</h3>
                         <br></br>
@@ -43,7 +45,7 @@ export default function Studio() {
             </div>
             <div className='content' id='suzuki-method'>
                 <div className='suzuki-method'>
-                    <LineDecoration />
+                    <LineDecoration color='white' height={20}/>
                     <div id='suzuki-method-text'>
                         <h3 id='suzuki-method-title'>The Suzuki Method</h3>
                         <div>{suzukiMethod1}<br></br><br></br>S. Suzuki</div>
@@ -68,6 +70,30 @@ export default function Studio() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='content' style={{backgroundColor: 'black'}}>
+                <div className='suzuki-method'>
+                    this is left
+                </div>
+                <div className='pricing-right'>
+                    <div className='pricing-element' id='practicing-element'>
+                        <h3 id='practice-title'>Parents and Practicing</h3>
+                        <p id='practice-text'>{practicingStatement}</p>
+                        <h3 id='practice-title'>Parent Involvement</h3>
+                        <p id='practice-text'>{parentInvolvement}</p>
+                        <p id='practice-text'>Typically one parent or caregiver commits to:</p>
+                        <ul id='practice-bullet-points'>
+                            <li>Attend all lessons & take detailed notes for home practice</li>
+                            <li>Establish a daily home practice routine</li>
+                            <li>Participate in the practice as the &quot;home teacher&quot; working with their child through the weekly practice assignments. No previous music experience is necessary beyond attending weekly lessons.</li>
+                            <li>Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
+                            <li>Initiate listening to classical/violin music at home and attending several live performances each year.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className='content' id='upcoming-events'>
+
             </div>
             <Fader />
             <div className='content'>
