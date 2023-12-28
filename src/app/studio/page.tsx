@@ -3,6 +3,7 @@ import Fader from '@/components/Fader';
 import LineDecoration from '@/components/LineDecoration';
 import ScrollElement from '@/components/ScrollElement';
 import Image from 'next/image';
+import Event from '@/components/Event';
 
 export default function Studio() {
     const suzukiQuote: string = '"The main concern for parents should be to bring up their children as noble human beings. That is sufficient. If this is not their greatest hope, in the end the child may take a road contrary to their expectations. Children can play very well. We must try to make them splendid in mind and heart also."';
@@ -13,6 +14,43 @@ export default function Studio() {
     const suzukiMethod2: string = '"More than fifty years ago, Japanese violinist Shinichi Suzuki realized the implications of the fact that children the world over learn to speak their native language with ease. He began to apply the basic principles of language acquisition to the learning of music, and called his method the mother-tongue approach. The ideas of parent responsibility, loving encouragement, constant repetition, etc., are some of the special features of the Suzuki approach."';
     const practicingStatement: string = 'In each lesson, I will work with students to set practical goals for practicing. I expect every student to put in effort with their music in order to improve and make the lesson a more enjoyable and time efficient space.';
     const parentInvolvement: string = 'The Suzuki Method involves parents as an integral part of the learning process for younger students. Many Suzuki parents will learn to play the first piece in Book 1 ahead of their child to understand what the student is expected to do.';
+
+    /*
+
+    Here is a template for your for events. All curly braces, commas,
+    colons and apostrophes must be in the order shown in addition to
+    the keys (date, event, location) being present.
+
+    {
+        date: 'YOUR DATE HERE',
+        event: 'YOUR EVENT HERE',
+        location: 'YOUR LOCATION HERE',
+    },
+
+    */
+
+    const upcomingEvents: Object[] = [
+        {
+            date: 'Tuesday, Dec 18',
+            event: 'Winter Recital',
+            location: 'St. Marks Episcopal Church'
+        },
+        {
+            date: 'Friday, Dec 22',
+            event: 'Violin Caroling',
+            location: 'The Village of Meyerland'
+        },
+        {
+            date: 'Spring, TBD',
+            event: 'Suzuki Book 1 Playdown',
+            location: 'Hermann Park'
+        },
+        {
+            date: 'TBD',
+            event: 'Spring Chamber Recital',
+            location: 'St. Marks Episcopal Church'
+        },
+    ];
 
     return (
         <>
@@ -72,9 +110,6 @@ export default function Studio() {
                 </div>
             </div>
             <div className='content' style={{backgroundColor: 'black'}}>
-                <div className='suzuki-method'>
-                    this is left
-                </div>
                 <div className='pricing-right'>
                     <div className='pricing-element' id='practicing-element'>
                         <h3 id='practice-title'>Parents and Practicing</h3>
@@ -83,17 +118,24 @@ export default function Studio() {
                         <p id='practice-text'>{parentInvolvement}</p>
                         <p id='practice-text'>Typically one parent or caregiver commits to:</p>
                         <ul id='practice-bullet-points'>
-                            <li>Attend all lessons & take detailed notes for home practice</li>
-                            <li>Establish a daily home practice routine</li>
-                            <li>Participate in the practice as the &quot;home teacher&quot; working with their child through the weekly practice assignments. No previous music experience is necessary beyond attending weekly lessons.</li>
-                            <li>Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
-                            <li>Initiate listening to classical/violin music at home and attending several live performances each year.</li>
+                            <li>- Attend all lessons & take detailed notes for home practice</li>
+                            <li>- Establish a daily home practice routine</li>
+                            <li>- Participate in the practice as the &quot;home teacher&quot; working with their child through the weekly practice assignments. No previous music experience is necessary beyond attending weekly lessons.</li>
+                            <li>- Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
+                            <li>- Initiate listening to classical/violin music at home and attending several live performances each year.</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className='content' id='upcoming-events'>
-
+                <h2 className='upcoming-events-title'>Upcoming Studio Events</h2>
+                <div className='upcoming-events-content'>
+                    {
+                        upcomingEvents.length ? upcomingEvents.map((e, i) => <Event date={e.date} event={e.event} location={e.location} key={i}/>) :
+                            <div className='no-events-display'>No events currently!</div>
+                    }
+                    
+                </div>
             </div>
             <Fader />
             <div className='content'>

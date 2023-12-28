@@ -561,4 +561,45 @@ input:focus, textarea:focus {
 
 #practice-bullet-points li {
     padding-top: 10px;
+    list-style-type: none;
+}
+
+.upcoming-events-title {
+    font-size: 75px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.upcoming-events-content {
+    padding: 100px;
+}
+
+.no-events-display {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event {
+    margin: 10px;
+    padding: 50px;
+    border-bottom: 1px solid black;
+    width: 50vw;
+}
+
+.event-info {
+    display: flex;
+}
+
+.event-date {
+    font-size: 20px;
+}
+
+.event-info {
+    font-size: 28px;
+}
+
+#upcoming-events {
+    height: auto;
 }
