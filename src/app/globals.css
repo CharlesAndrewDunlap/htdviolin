@@ -347,7 +347,8 @@ input:focus, textarea:focus {
 
 #studio-banner {
     height: 40vh;
-    background-color: #edc43d;
+    /* background-color: #edc43d; */
+    background: linear-gradient(to right, #edc43d, #f3d276);
     width: 100vw;
 }
 
@@ -482,8 +483,65 @@ input:focus, textarea:focus {
 
 .pricing-right {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50vw;
     color: whitesmoke;
+}
+
+.pricing-element {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 25vw;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+    position: relative;
+}
+
+.price-element-title {
+    font-weight: bolder;
+    margin: 30px;
+}
+
+.price-text {
+    font-weight: 200;
+    line-height: 150%;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+
+#current-pricing {
+    font-weight: bold;
+}
+
+.price-text-inner {
+    margin: 10px;
+    line-height: 150%;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.scroll-element {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: auto;
+}
+
+.scroll-element:hover {
+    color: #edc43d;
+    border-color: #edc43d;
+}
+
+.scroll-element-div {
+    margin: 20px;
+    margin-top: auto;
 }

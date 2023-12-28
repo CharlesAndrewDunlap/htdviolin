@@ -1,6 +1,7 @@
 import ContactForm from '@/components/ContactForm';
 import Fader from '@/components/Fader';
 import LineDecoration from '@/components/LineDecoration';
+import ScrollElement from '@/components/ScrollElement';
 import Image from 'next/image';
 
 export default function Studio() {
@@ -48,11 +49,24 @@ export default function Studio() {
                         <div>{suzukiMethod1}<br></br><br></br>S. Suzuki</div>
                         <br></br><br></br>
                         <div>{suzukiMethod2}</div><br></br><div style={{fontStyle: 'italic', marginBottom: '15px'}}>Read more from the Suzuki Association</div>
-                        <a href='https://suzukiassociation.org/about/suzuki-method/' id='SAA-link'>Learn More</a>
+                        <a href='https://suzukiassociation.org/about/suzuki-method/' id='SAA-link' target='_blank'>Learn More</a>
                     </div>
                 </div>
                 <div className='pricing-right'>
-                    this is the right
+                    <div className='pricing-element'>
+                        <h3 className='price-element-title'>Lesson Prices</h3>
+                        <p className='price-text' id='current-pricing'>$40 - 30 min lessons<br></br>$58 - 45 min lessons<br></br>$70 - 1 hour lessons</p>
+                        <p className='price-text'>*Lessons can be offered in-home for a $10 travel fee.</p>
+                        <p className='price-text-inner'>Book 2-3 - 45 min. recommended minimum<br></br>Book 4+ - 1 hour recommended mininmum</p>
+                    </div>
+                    <div className='pricing-element'>
+                        <h3 className='price-element-title'>{"Let's Meet"}</h3>
+                        <p className='price-text'>{"I offer a free 30 min trial lesson for students of all ages and experience. For those interested in beginning violin, this time can be used to get to know each other and share information about how to get started. Set up a meeting or send me your questions in the 'contact' tab."}</p>
+                        <div className='scroll-element-div'>
+                        <ScrollElement className='scroll-element' />
+                        <div style={{width: '50%'}}></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Fader />
