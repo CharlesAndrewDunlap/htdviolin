@@ -3,7 +3,8 @@ import Fader from '@/components/Fader';
 import LineDecoration from '@/components/LineDecoration';
 import ScrollElement from '@/components/ScrollElement';
 import Image from 'next/image';
-import Event from '@/components/Event';
+import Event, { EventDetails } from '@/components/Event';
+import ParallaxContent from '@/components/ParallaxContent';
 
 export default function Studio() {
     const suzukiQuote: string = '"The main concern for parents should be to bring up their children as noble human beings. That is sufficient. If this is not their greatest hope, in the end the child may take a road contrary to their expectations. Children can play very well. We must try to make them splendid in mind and heart also."';
@@ -29,7 +30,7 @@ export default function Studio() {
 
     */
 
-    const upcomingEvents: Object[] = [
+    const upcomingEvents: EventDetails[] = [
         {
             date: 'Tuesday, Dec 18',
             event: 'Winter Recital',
@@ -51,6 +52,8 @@ export default function Studio() {
             location: 'St. Marks Episcopal Church'
         },
     ];
+
+    const backgroundImage: string = '/TingBackground.jpg';
 
     return (
         <>
@@ -89,7 +92,7 @@ export default function Studio() {
                         <div>{suzukiMethod1}<br></br><br></br>S. Suzuki</div>
                         <br></br><br></br>
                         <div>{suzukiMethod2}</div><br></br><div style={{fontStyle: 'italic', marginBottom: '15px'}}>Read more from the Suzuki Association</div>
-                        <a href='https://suzukiassociation.org/about/suzuki-method/' id='SAA-link' target='_blank'>Learn More</a>
+                        <a href='https://suzukiassociation.org/about/suzuki-method/' id='nav-button' target='_blank'>Learn More</a>
                     </div>
                 </div>
                 <div className='pricing-right'>
@@ -134,13 +137,12 @@ export default function Studio() {
                         upcomingEvents.length ? upcomingEvents.map((e, i) => <Event date={e.date} event={e.event} location={e.location} key={i}/>) :
                             <div className='no-events-display'>No events currently!</div>
                     }
-                    
                 </div>
             </div>
             <Fader />
-            <div className='content'>
+            <ParallaxContent>
                 <ContactForm />
-            </div>
+            </ParallaxContent>
         </>
     );
 }

@@ -1,4 +1,4 @@
-interface EventDetails {
+export interface EventDetails {
     date: string;
     event: string;
     location: string;

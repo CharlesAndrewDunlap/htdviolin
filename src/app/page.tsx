@@ -6,6 +6,7 @@ import { Parallax } from 'react-parallax';
 import Image from 'next/image';
 import Fader from '@/components/Fader';
 import ContactForm from '@/components/ContactForm';
+import ParallaxContent from '@/components/ParallaxContent';
 
 export default function Home() {
   const [titleOpacity, setTitleOpacity] = useState(1);
@@ -58,17 +59,19 @@ export default function Home() {
       <Parallax bgImage={tingVertical} blur={{ min: -5, max: 10 }} strength={300} className='parallax-2'>
         <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity }}>
           <h2 className='title'>The Hymn Project</h2>
-          <h3 className='subtitle'>. . .coming soon</h3>
           <div className='horizontal-bar'></div>
           <p className='description-text'>{hymnProjectDescription}</p>
+          <a href='/hymnProject' className='nav-item' id='nav-button'>Experience</a>
         </div>
       </Parallax>
-
-      <Parallax bgImage={backgroundImage} strength={-500}>
-        <div className='content'>
-          <ContactForm></ContactForm>
+      <Parallax bgImage={tingVertical} blur={{ min: -3, max: 3 }} strength={500} className='parallax-2' bgImageStyle={{ opacity: '.3' }}>
+        <div className='bio-element'>
+          Hello
         </div>
-      </Parallax >
+      </Parallax>
+      <ParallaxContent>
+          <ContactForm></ContactForm>
+      </ParallaxContent>
     </div >
   )
 }

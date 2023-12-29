@@ -456,7 +456,7 @@ input:focus, textarea:focus {
     margin-bottom: 1.5em;
 }
 
-#SAA-link {
+#nav-button {
     text-decoration: none;
     color: whitesmoke;
     border: 1px solid whitesmoke;
@@ -465,7 +465,7 @@ input:focus, textarea:focus {
     transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-#SAA-link:hover {
+#nav-button:hover {
     color: #edc43d;
     border-color: #edc43d;
 }
@@ -602,4 +602,12 @@ input:focus, textarea:focus {
 
 #upcoming-events {
     height: auto;
+}
+
+.bio-element {
+    width: 30vw;
+    height: 60vh;
+    background-color: black;
+    border-radius: 10px;
+    color: whitesmoke;
 }
