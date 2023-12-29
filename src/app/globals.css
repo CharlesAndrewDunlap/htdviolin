@@ -605,9 +605,72 @@ input:focus, textarea:focus {
 }
 
 .bio-element {
-    width: 30vw;
-    height: 60vh;
-    background-color: black;
+    width: fit-content;
+    height: auto;
     border-radius: 10px;
     color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 30vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 5vw;
+}
+
+.bio-title {
+    color: rgb(31, 30, 43);
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 3vh;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.bio-quote {
+    font-style: italic;
+    font-size: 30px;
+    line-height: 200%;
+    width: 35vw;
+    margin-bottom: 3vh;
+    color: rgb(31, 30, 43);
+}
+
+.short-bio {
+    font-size: 18px;
+    width: 35vw;
+    line-height: 150%;
+    color: rgb(31, 30, 43);
+}
+
+.bio-download-div {
+    align-self: flex-start;
+    padding: 10px;
+    margin-top: 25px;
+    display: inline-flex;
+}
+
+.bio-download {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.bio-download:hover {
+    border-color: black;
+    background-color: whitesmoke;
+}
+
+#bio-download-svg {
+    position: relative;
+    margin-left: 20px;
 }
