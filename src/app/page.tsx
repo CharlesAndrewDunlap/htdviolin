@@ -60,14 +60,18 @@ export default function Home() {
         </div>
       </Parallax>
 
-      <Parallax bgImage={tingVertical} blur={{ min: -5, max: 10 }} strength={300} className='parallax-2'>
+      {/* <Parallax bgImage={tingVertical} blur={{ min: -5, max: 10 }} strength={300} className='parallax-2'> */}
+      <div className='content' style={{height: '110vh', overflow: 'hidden'}}>
+      <video src='HymnProjectIntermission.mp4' className='hymn-project-background' id='home-background-video' controls autoPlay muted loop>
         <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity }}>
           <h2 className='title'>The Hymn Project</h2>
           <div className='horizontal-bar'></div>
           <p className='description-text'>{hymnProjectDescription}</p>
           <a href='/hymnProject' className='nav-item' id='nav-button'>Experience</a>
         </div>
-      </Parallax>
+      </video>
+      </div>
+      {/* </Parallax> */}
       <Parallax bgImage={tingVertical} blur={{ min: -3, max: 3 }} strength={500} className='parallax-2' bgImageStyle={{ opacity: '.3' }}>
           <div className='bio-element'>
             <h3 className='bio-title'>Bio</h3>

@@ -674,3 +674,8 @@ input:focus, textarea:focus {
     position: relative;
     margin-left: 20px;
 }
+
+#home-background-video {
+    position: absolute;
+    filter: blur(5px);
+}
