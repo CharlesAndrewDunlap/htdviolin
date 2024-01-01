@@ -353,7 +353,7 @@ input:focus, textarea:focus {
 #studio-banner {
     height: 40vh;
     /* background-color: #edc43d; */
-    background: linear-gradient(to right, #edc43d, #f3d276);
+    /* background: linear-gradient(to right, #edc43d, #f3d276); */
     width: 100vw;
 }
 
@@ -375,11 +375,18 @@ input:focus, textarea:focus {
 }
 
 #suzuki-div {
-    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-top: 3px solid #edc43d;
+    border-bottom: 3px solid #edc43d;
+    background-color: #b6b6b623;
+    margin-right: 8vw;
+    padding: 30px;
 }
 
 #suzuki-quote {
-    width: 60%;
     line-height: 200%;
     font-size: 20px;
 }
@@ -422,6 +429,13 @@ input:focus, textarea:focus {
 #location-text {
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+#location-text-inner {
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 #ting-image {
@@ -434,6 +448,11 @@ input:focus, textarea:focus {
 
 #location-text-content {
     width: 40%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(245, 245, 245, 0.706);
+    font-size: 24px;
 }
 
 .line-decoration {
@@ -442,7 +461,7 @@ input:focus, textarea:focus {
 }
 
 #suzuki-method {
-    background-color: #333;
+    background: linear-gradient(#123070, #0d3a9a);
     flex-direction: row;
 }
 

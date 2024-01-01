@@ -19,8 +19,6 @@ export default function LineDecoration({ color, height }: LineDecorationProps): 
     }, []);
 
     const handleScroll = () => {
-        console.log('here is scrollY', scrollY);
-        console.log('here is maxScroll current', maxScroll.current);
         setScrollPercent(scrollY / maxScroll.current);
     }
 

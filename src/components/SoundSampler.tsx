@@ -8,7 +8,6 @@ export default function SoundSampler(): JSX.Element {
     useEffect(() => {
         const handleScroll = () => {
             const newOpacity: number = Math.max(1 - window.scrollY / 500, 0);
-            console.log('here is newOPacity', newOpacity);
             setOpacity(newOpacity);
         }
 

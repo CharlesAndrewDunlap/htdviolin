@@ -64,7 +64,7 @@ export default function Home() {
           <h2 className='title'>The Hymn Project</h2>
           <div className='horizontal-bar'></div>
           <p className='description-text'>{hymnProjectDescription}</p>
-          <a href='/hymnProject' className='nav-item' id='nav-button'>Experience</a>
+          <a href='/thehymnproject' className='nav-item' id='nav-button'>Experience</a>
         </div>
       </div>
       {/* </Parallax> */}

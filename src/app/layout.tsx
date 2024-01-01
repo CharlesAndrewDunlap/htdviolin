@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  let style = children.props.childProp.segment === 'hymnProject' ? 'nav-item-hymn' : 'nav-item';
-  let dropDownStyle = children.props.childProp.segment === 'hymnProject' ? 'drop-down-hymn' : 'drop-down';
+  let style = children.props.childProp.segment === 'thehymnproject' ? 'nav-item-hymn' : 'nav-item';
+  let dropDownStyle = children.props.childProp.segment === 'thehymnproject' ? 'drop-down-hymn' : 'drop-down';
   
   return (
     <html lang='en' className={montserrat.className}>
@@ -42,7 +42,7 @@ export default function RootLayout({
               <a href='/studio' className={style}>Studio</a>
             </li>
             <li>
-              <a href='/hymnProject' className={style}>The Hymn Project</a>
+              <a href='/thehymnproject' className={style}>The Hymn Project</a>
             </li>
           </ul>
           <ul className='nav-bar-right'>

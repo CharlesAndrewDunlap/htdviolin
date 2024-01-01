@@ -5,6 +5,8 @@ import ScrollElement from '@/components/ScrollElement';
 import Image from 'next/image';
 import Event, { EventDetails } from '@/components/Event';
 import ParallaxContent from '@/components/ParallaxContent';
+import StudioBannerParallax from '../../components/StudioBannerParallax';
+import StudioLocationParallax from '@/components/StudioLocationParallax';
 
 export default function Studio() {
     const suzukiQuote: string = '"The main concern for parents should be to bring up their children as noble human beings. That is sufficient. If this is not their greatest hope, in the end the child may take a road contrary to their expectations. Children can play very well. We must try to make them splendid in mind and heart also."';
@@ -55,10 +57,7 @@ export default function Studio() {
 
     return (
         <>
-            <div className='content' id='studio-banner'>
-                <h3 className='studio-banner-subtitle'>Suzuki Violin Lessons</h3>
-                <h2 className='studio-banner-title'>Davidson Studio</h2>
-            </div>
+            <StudioBannerParallax />
             <div className='content' id='mission-content'>
                 <div id='suzuki-div'>
                     <p id='suzuki-quote'>{suzukiQuote}<br></br><br></br></p><p id='suzuki-signature'>-Shinichi Suzuki</p>
@@ -69,19 +68,23 @@ export default function Studio() {
                     <p id='mission-statement'><br></br>{missionStatement2}</p>
                 </div>
             </div>
-            <div className='content' id='location'>
-                <div className='location-div' id='location-text'>
-                    <LineDecoration color='black' height={20}/>
-                    <div id='location-text-content'>
-                        <h3>Location</h3>
-                        <br></br>
-                        <p>{currentLocation}</p>
+            <StudioLocationParallax>
+                <div className='content' id='location'>
+                    <div className='location-div' id='location-text'>
+                        <div className='location-div' id='location-text-inner'>
+                            <LineDecoration color='black' height={20}/>
+                            <div id='location-text-content'>
+                                <h3>Location</h3>
+                                <br></br>
+                                <p>{currentLocation}</p>
+                            </div>
+                            </div>
+                        </div>
+                    <div className='location-div'>
+                    <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting' />
                     </div>
                 </div>
-                <div className='location-div'>
-                <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting' />
-                </div>
-            </div>
+            </StudioLocationParallax>
             <div className='content' id='suzuki-method'>
                 <div className='suzuki-method'>
                     <LineDecoration color='white' height={20}/>
