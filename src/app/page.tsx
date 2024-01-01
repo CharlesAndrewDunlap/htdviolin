@@ -1,9 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import styles from './page.module.css';
 import { Parallax } from 'react-parallax';
-import Image from 'next/image';
 import Fader from '@/components/Fader';
 import ContactForm from '@/components/ContactForm';
 import ParallaxContent from '@/components/ParallaxContent';
@@ -27,7 +25,7 @@ export default function Home() {
       if (mainTitle) {
         const scrollY = window.scrollY;
         const titleRect = mainTitle.getBoundingClientRect();
-        const newOpacity = Math.max(.2 - (scrollY - titleRect.top) / 200, 0);
+        const newOpacity = Math.max(.2 - ((scrollY - 650) - titleRect.top) / 600, 0);
         setTitleOpacity(newOpacity);
       }
     }
@@ -38,10 +36,10 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const mainTitle = document.getElementById('hymn-project-content');
-      if (mainTitle) {
+      const hymnProjectContent = document.getElementById('hymn-project-content');
+      if (hymnProjectContent) {
         const scrollY = window.scrollY;
-        const titleRect = mainTitle.getBoundingClientRect();
+        const titleRect = hymnProjectContent.getBoundingClientRect();
         const newOpacity = Math.max(3 - (scrollY - titleRect.top) / 600, 0);
         setHymnContentOpacity(newOpacity);
       }

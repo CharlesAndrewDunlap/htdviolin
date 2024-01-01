@@ -53,8 +53,6 @@ export default function Studio() {
         },
     ];
 
-    const backgroundImage: string = '/TingBackground.jpg';
-
     return (
         <>
             <div className='content' id='studio-banner'>

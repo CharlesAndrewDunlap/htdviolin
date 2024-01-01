@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState, useRef, ReactComponentElement } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 interface LineDecorationProps {
     color: string;
@@ -19,6 +19,8 @@ export default function LineDecoration({ color, height }: LineDecorationProps): 
     }, []);
 
     const handleScroll = () => {
+        console.log('here is scrollY', scrollY);
+        console.log('here is maxScroll current', maxScroll.current);
         setScrollPercent(scrollY / maxScroll.current);
     }
 

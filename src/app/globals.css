@@ -213,6 +213,7 @@ body {
     color: whitesmoke;
     font-size: large;
     font-style: italic;
+    line-height: 200%;
 }
 
 .ting-vertical {
@@ -289,10 +290,11 @@ input:focus, textarea:focus {
     background-color: whitesmoke;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
 }
 
 #submit-button.submit-button-success {
-    background-color: #646bec;
+    background-color: #edc43d;
 }
 
 .confirmation-message {
@@ -300,7 +302,7 @@ input:focus, textarea:focus {
     top: -50px;
     left: 50vw;
     transform: translateX(-50%);
-    background-color: #646bec;
+    background-color: #edc43d;
     background-image: linear-gradient(to right, #6e74e3 75%, #646bec) 100%;
     color: whitesmoke;
     padding: 20px;
@@ -571,6 +573,7 @@ input:focus, textarea:focus {
     font-size: 75px;
     margin-top: 50px;
     padding: 50px;
+    font-style: italic;
 }
 
 .upcoming-events-content {
@@ -676,6 +679,45 @@ input:focus, textarea:focus {
 #bio-download-svg {
     position: relative;
     margin-left: 20px;
+}
+
+.sound-sampler {
+    position: absolute;
+    left: 50%;
+    width: 15vw;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    height: 5vh;
+    font-size: 20px;
+    font-style: italic;
+    background: linear-gradient(to right, #edc43d 10%, #ffd86b);
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    bottom: 10%;
+    opacity: 0.8;
+}
+
+.sound-sampler span {
+    position: relative;
+    z-index: 100;
+}
+
+.sound-sampler::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #fdf6e1 55%, #edc43d);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 50px;
+}
+
+.sound-sampler:hover::before {
+    opacity: 1;
 }
 
 #hymn-background-video {

@@ -1,6 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import Fader from "@/components/Fader";
-import Event from "@/components/Event";
+import Event, { EventDetails } from "@/components/Event";
+import SoundSampler from "@/components/SoundSampler";
 
 export default function HymnProject() {
     const hymnProjectInfo: string = "The Hymn Project is centered around bringing the beauty and depth of hymns to string ensemble and exploring how these old traditions pass down and invite us to experience something greater than ourselves.";
@@ -17,7 +18,7 @@ export default function HymnProject() {
 
     */
 
-    const upcomingEvents: Object[] = [
+    const upcomingEvents: EventDetails[] = [
         //Put your events in here.
         
     ]
@@ -26,6 +27,7 @@ export default function HymnProject() {
         <>
         <div className='background'>
             <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' controls autoPlay muted loop></video>
+            <SoundSampler />
         </div>
         <Fader></Fader>
         <div className='content' id='hymn-project-content-1'>
