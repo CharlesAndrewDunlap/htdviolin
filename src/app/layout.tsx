@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
 import { Montserrat } from 'next/font/google';
 import ScrollElement from '../components/ScrollElement';
+import React, { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -19,11 +20,11 @@ const montserrat = Montserrat({
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
 
-  let style = children.props.childProp.segment === 'thehymnproject' ? 'nav-item-hymn' : 'nav-item';
-  let dropDownStyle = children.props.childProp.segment === 'thehymnproject' ? 'drop-down-hymn' : 'drop-down';
+  let style = typeof children === 'object' && 'props' in children! && children.props?.childProp.segment === 'thehymnproject' ? 'nav-item-hymn' : 'nav-item';
+  let dropDownStyle = typeof children === 'object' && 'props' in children! && children?.props?.childProp.segment === 'thehymnproject' ? 'drop-down-hymn' : 'drop-down';
   
   return (
     <html lang='en' className={montserrat.className}>

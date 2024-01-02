@@ -1,7 +1,7 @@
 'use client'
 
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useState, useRef } from 'react';
+import { useState, useRef, ReactComponentElement } from 'react';
 import { verifyCaptcha } from '@/app/ServerActions';
 
 export default function ContactForm() {
@@ -78,18 +78,18 @@ export default function ContactForm() {
         }
     }
 
-    function displaySuccess(button) {
+    function displaySuccess(button: Element | null) {
         setSentMessage(true);
         //Setting the animationType decouples the element from the slideUp animation set during the below setTimeout.
         setAnimationType('enter');
         setSubmitText('Message Sent');
-        button.classList.add('submit-button-success');
+        button!.classList.add('submit-button-success');
 
         setTimeout(() => {
             //This reassigns the element's animation property from slideDown to slideUp.
             setAnimationType('exit');
             setSubmitText('Submit');
-            button.classList.remove('submit-button-success');
+            button!.classList.remove('submit-button-success');
             setTimeout(() => setSentMessage(false), 500);
         }, 2000);
     }
