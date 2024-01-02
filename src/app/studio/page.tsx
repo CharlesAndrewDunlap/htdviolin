@@ -98,17 +98,17 @@ export default function Studio() {
                     </div>
                 </div>
                 <div className='pricing-right'>
-                    <div className='pricing-element'>
+                    <div className='pricing-element' id='price-element-1'>
                         <h3 className='price-element-title'>Lesson Prices</h3>
                         <p className='price-text' id='current-pricing'>$40 - 30 min lessons<br></br>$58 - 45 min lessons<br></br>$70 - 1 hour lessons</p>
+                        <p className='price-text'>Book 2-3 - 45 min. recommended minimum<br></br>Book 4+ - 1 hour recommended mininmum</p>
                         <p className='price-text'>*Lessons can be offered in-home for a $10 travel fee.</p>
-                        <p className='price-text-inner'>Book 2-3 - 45 min. recommended minimum<br></br>Book 4+ - 1 hour recommended mininmum</p>
                     </div>
-                    <div className='pricing-element'>
+                    <div className='pricing-element' id='price-element-2'>
                         <h3 className='price-element-title'>{"Let's Meet"}</h3>
                         <p className='price-text'>{"I offer a free 30 min trial lesson for students of all ages and experience. For those interested in beginning violin, this time can be used to get to know each other and share information about how to get started. Set up a meeting or send me your questions in the 'contact' tab."}</p>
                         <div className='scroll-element-div'>
-                        <ScrollElement className='scroll-element' />
+                        <ScrollElement className='scroll-element'/>
                         <div style={{width: '50%'}}></div>
                         </div>
                     </div>

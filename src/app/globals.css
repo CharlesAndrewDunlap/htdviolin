@@ -463,6 +463,7 @@ input:focus, textarea:focus {
 #suzuki-method {
     background: linear-gradient(#123070, #0d3a9a);
     flex-direction: row;
+    height: 100vh;
 }
 
 .suzuki-method {
@@ -515,6 +516,11 @@ input:focus, textarea:focus {
     position: relative;
 }
 
+#price-element-1, #price-element-2 {
+    height: fit-content;
+    padding-right: 20px;
+}
+
 .price-element-title {
     font-weight: bolder;
     margin: 30px;
@@ -547,6 +553,7 @@ input:focus, textarea:focus {
     padding: 10px;
     transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
     margin-top: auto;
+    margin-left: 10px;
 }
 
 .scroll-element:hover {
