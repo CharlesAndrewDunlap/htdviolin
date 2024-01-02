@@ -30,6 +30,7 @@ export default function Home() {
         setTitleOpacity(newOpacity);
       }
     }
+    
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
