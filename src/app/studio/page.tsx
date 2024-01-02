@@ -7,6 +7,7 @@ import Event, { EventDetails } from '@/components/Event';
 import ParallaxContent from '@/components/ParallaxContent';
 import StudioBannerParallax from '../../components/StudioBannerParallax';
 import StudioLocationParallax from '@/components/StudioLocationParallax';
+import StudioContentParallax from '@/components/StudioContentParallax';
 
 export default function Studio() {
     const suzukiQuote: string = '"The main concern for parents should be to bring up their children as noble human beings. That is sufficient. If this is not their greatest hope, in the end the child may take a road contrary to their expectations. Children can play very well. We must try to make them splendid in mind and heart also."';
@@ -113,24 +114,26 @@ export default function Studio() {
                     </div>
                 </div>
             </div>
-            <div className='content' style={{backgroundColor: 'black'}}>
-                <div className='pricing-right'>
-                    <div className='pricing-element' id='practicing-element'>
-                        <h3 id='practice-title'>Parents and Practicing</h3>
-                        <p id='practice-text'>{practicingStatement}</p>
-                        <h3 id='practice-title'>Parent Involvement</h3>
-                        <p id='practice-text'>{parentInvolvement}</p>
-                        <p id='practice-text'>Typically one parent or caregiver commits to:</p>
-                        <ul id='practice-bullet-points'>
-                            <li>- Attend all lessons & take detailed notes for home practice</li>
-                            <li>- Establish a daily home practice routine</li>
-                            <li>- Participate in the practice as the &quot;home teacher&quot; working with their child through the weekly practice assignments. No previous music experience is necessary beyond attending weekly lessons.</li>
-                            <li>- Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
-                            <li>- Initiate listening to classical/violin music at home and attending several live performances each year.</li>
-                        </ul>
+            <StudioContentParallax>
+                <div className='content'>
+                    <div className='pricing-right'>
+                        <div className='pricing-element' id='practicing-element'>
+                            <h3 id='practice-title'>Parents and Practicing</h3>
+                            <p id='practice-text'>{practicingStatement}</p>
+                            <h3 id='practice-title'>Parent Involvement</h3>
+                            <p id='practice-text'>{parentInvolvement}</p>
+                            <p id='practice-text'>Typically one parent or caregiver commits to:</p>
+                            <ul id='practice-bullet-points'>
+                                <li>- Attend all lessons & take detailed notes for home practice</li>
+                                <li>- Establish a daily home practice routine</li>
+                                <li>- Participate in the practice as the &quot;home teacher&quot; working with their child through the weekly practice assignments. No previous music experience is necessary beyond attending weekly lessons.</li>
+                                <li>- Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
+                                <li>- Initiate listening to classical/violin music at home and attending several live performances each year.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </StudioContentParallax>
             <div className='content' id='upcoming-events'>
                 <h2 className='upcoming-events-title'>Upcoming Studio Events</h2>
                 <div className='upcoming-events-content'>
