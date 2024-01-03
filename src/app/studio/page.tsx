@@ -81,8 +81,10 @@ export default function Studio() {
                             </div>
                             </div>
                         </div>
-                    <div className='location-div'>
-                    <Image src='/TingTeaching.jpeg' alt='Ting Teaching' width={400} height={600} className='ting-sitting' />
+                    <div className='location-div' id='image-grid'>
+                    <Image src='/TingTeaching1.JPG' alt='Ting working with a child on posture' width={400} height={610} className='ting-teaching'/>
+                    <Image src='/TingTeaching.jpeg' alt='Ting sitting on a park bench' width={200} height={300} />
+                    <Image src='/TingTeaching2.JPG' alt='Ting working with a child on bow holds' width={200} height={300}/>
                     </div>
                 </div>
             </StudioLocationParallax>

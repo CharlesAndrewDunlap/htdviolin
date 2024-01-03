@@ -223,12 +223,17 @@ body {
 }
 
 .content {
-    height: 110vh;
+    /* height: 110vh; */
+    height: fit-content;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#full-height-content {
+    height: 110vh;
 }
 
 .parallax-1 {
@@ -426,6 +431,18 @@ input:focus, textarea:focus {
     width: 50vw;
 }
 
+#image-grid {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+}
+
+.location-div .ting-teaching {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
 #location-text {
     align-items: center;
     justify-content: center;
@@ -442,7 +459,7 @@ input:focus, textarea:focus {
     width: 50%;
 }
 
-.ting-sitting {
+.ting-teaching {
     float: center;
 }
 

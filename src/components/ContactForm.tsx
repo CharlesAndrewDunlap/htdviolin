@@ -95,7 +95,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div>
+        <div style={{height: '100vh'}}>
             {sentMessage && <div className={`confirmation-message ${animationType}`}>Message Sent</div>}
             <div>
             <h2 className='title' id='contact-title'>Contact Me</h2>
