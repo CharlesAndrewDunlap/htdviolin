@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
-import Fader from '@/components/Fader';
+import Fader from '../components/Fader';
 import ContactForm from '@/components/ContactForm';
 import ParallaxContent from '@/components/ParallaxContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <div className='App'>
-      {/* <Fader></Fader> */}
+      <Fader></Fader>
       <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
         <div className='content' id='full-height-content'>
           <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson, Violin</h2>
