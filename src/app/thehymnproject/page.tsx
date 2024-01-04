@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import Fader from "../../components/Fader";
+// import Fader from "../../components/Fader";
 import Event, { EventDetails } from "@/components/Event";
 import SoundSampler from "@/components/SoundSampler";
 
@@ -29,7 +29,7 @@ export default function HymnProject() {
             <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' controls autoPlay muted loop></video>
             <SoundSampler />
         </div>
-        <Fader></Fader>
+        {/* <Fader></Fader> */}
         <div className='content' id='hymn-project-content-1'>
             <video src='HymnProjectIntermission.mp4' className='hymn-project-background' id='hymn-background-video' autoPlay muted loop></video>
             <div className='hymn-project-info'>
