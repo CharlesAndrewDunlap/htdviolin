@@ -1,0 +1,26 @@
+# Node modules
+node_modules
+
+# Next.js build output
+.next
+out
+
+# Logs
+*.log
+
+# Directory for local development
+.local
+
+# Environment files
+.env
+.env.local
+.env.test.local
+
+# Git directory
+.git
+.gitignore
+
+# Other files and directories to ignore
+.DS_Store
+npm-debug.log
+yarn-error.log
