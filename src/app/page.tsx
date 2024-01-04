@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
-import Fader from '@/components/Fader';
+import Fader from '../components/Fader';
 import ContactForm from '@/components/ContactForm';
 import ParallaxContent from '@/components/ParallaxContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

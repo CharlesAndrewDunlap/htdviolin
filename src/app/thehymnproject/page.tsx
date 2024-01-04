@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import Fader from "@/components/Fader";
+import Fader from "../../components/Fader";
 import Event, { EventDetails } from "@/components/Event";
 import SoundSampler from "@/components/SoundSampler";
 

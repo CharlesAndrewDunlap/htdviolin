@@ -1,5 +1,5 @@
 import ContactForm from '@/components/ContactForm';
-import Fader from '@/components/Fader';
+import Fader from '../../components/Fader';
 import LineDecoration from '@/components/LineDecoration';
 import ScrollElement from '@/components/ScrollElement';
 import Image from 'next/image';
