@@ -53,9 +53,9 @@ body {
 }
 
 body {
-    opacity: 0;
-    transition: opacity 1.7s ease-in-out;
-    background-color: whitesmoke;
+    /* opacity: 0; */
+    /* transition: opacity 1.7s ease-in-out; */
+    /* background-color: whitesmoke; */
 }
 
 .nav-bar {
