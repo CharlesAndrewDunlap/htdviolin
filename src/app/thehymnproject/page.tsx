@@ -30,7 +30,7 @@ export default function HymnProject() {
         <>
         <div className='background'>
             {/* <Image src={backgroundPlaceholder} alt='The Hymn Project Logo' className='hymn-project-background' layout='fill' objectFit='cover'/> */}
-            <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' poster={backgroundPlaceholder} controls autoPlay muted loop></video>
+            <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' poster={backgroundPlaceholder} autoPlay muted loop></video>
             <SoundSampler />
         </div>
         <div className='content' id='hymn-project-content-1'>
