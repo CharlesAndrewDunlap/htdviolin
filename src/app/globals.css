@@ -191,7 +191,7 @@ body {
     /* font-style: italic; */
     font-weight: 300;
     text-align: center;
-    line-height: 200%;
+    line-height: 150%;
 }
 
 #main-title {
@@ -432,6 +432,7 @@ textarea:focus {
 
 #mission-statement {
     width: 50vw;
+    text-align: justify;
 }
 
 #suzuki-signature {
