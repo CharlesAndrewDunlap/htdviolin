@@ -14,6 +14,7 @@
     from {
         top: -100px;
     }
+
     to {
         top: 20px;
     }
@@ -23,6 +24,7 @@
     from {
         top: 20px;
     }
+
     to {
         top: -100px;
     }
@@ -238,13 +240,18 @@ body {
 }
 
 .parallax-1 {
-    margin-top: -140px;
+    margin-top: -200px;
 }
 
 .parallax-2 {
     height: 200vh;
     object-fit: cover;
     object-position: center middle;
+}
+
+#hymn-content {
+    height: 80vh;
+    width: auto;
 }
 
 .download-svg {
@@ -276,13 +283,15 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-input, textarea {
+input,
+textarea {
     transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
     border: 2px solid transparent;
     box-shadow: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border: #edc43d;
     box-shadow: 0 0 0 2px #edc43d;
 }
@@ -312,7 +321,7 @@ input:focus, textarea:focus {
     background-image: linear-gradient(to right, #6e74e3 75%, #646bec) 100%;
     color: whitesmoke;
     padding: 20px;
-    width: 15vw;
+    width: fit-content;
     border-radius: 5px;
     animation-name: slideDown;
     animation-duration: 0.5s;
@@ -536,7 +545,8 @@ input:focus, textarea:focus {
     position: relative;
 }
 
-#price-element-1, #price-element-2 {
+#price-element-1,
+#price-element-2 {
     height: fit-content;
     padding-right: 20px;
 }
@@ -793,11 +803,425 @@ input:focus, textarea:focus {
     color: #edc43d;
     font-weight: 100;
     text-shadow: 1px 1px rgba(112, 112, 112, 0.59)
-    /* background-color: black; */
+        /* background-color: black; */
 }
 
 #upcoming-events-hymn {
     width: 100vw;
     height: auto;
     background: linear-gradient(to left, #edc43d, whitesmoke 65%);
+}
+
+body.hymn-project-page {
+    opacity: 1;
+    background-color: black !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 5px;
+        margin: 20px 10px;
+        margin-top: 5px;
+        font-size: 12.5px;
+    }
+
+    .nav-bar ul {
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    .nav-bar li {
+        margin-bottom: 15px;
+    }
+
+    #full-height-content {
+        padding-top: 20vh;
+    }
+
+    .title {
+        font-size: x-large;
+    }
+
+    #hymn-content {
+        height: 100vh;
+    }
+
+    .description-text {
+        width: 75vw;
+        font-size: medium;
+    }
+
+    #nav-button {
+        margin-top: 10px;
+    }
+
+    .parallax-2 {
+        height: fit-content;
+    }
+
+    .bio-element {
+        margin-top: 5vh;
+        height: fit-content;
+        font-weight: bolder;
+        padding: 20px;
+        margin-left: 2vw;
+    }
+
+    .bio-title {
+        font-size: x-large;
+    }
+
+    .bio-quote,
+    .short-bio {
+        font-size: large;
+        width: 85vw;
+    }
+
+    .studio-banner-title {
+        font-size: 40px;
+    }
+
+    .studio-banner-subtitle {
+        font-size: x-large;
+    }
+
+    #mission-content {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    #suzuki-div {
+        width: fit-content;
+        margin: 0;
+    }
+
+    #mission-statement {
+        width: fit-content;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #suzuki-quote {
+        font-size: 14px;
+    }
+
+    #suzuki-signature {
+        font-size: 14px;
+    }
+
+    #mission-title {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding-top: 15px;
+    }
+
+    #location {
+        flex-direction: column;
+    }
+
+    #mission-statement {
+        font-size: 14px;
+    }
+
+    #location-text-content {
+        font-size: 14px;
+        padding: 15px;
+        width: fit-content;
+        margin-right: 25px;
+    }
+
+    .location-div {
+        margin-top: 10px;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        font-weight: bolder;
+    }
+
+    #next-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #image-grid {
+        grid-template-columns: 100px 200px;
+        grid-template-rows: 150px 150px;
+    }
+
+    .suzuki-method {
+        margin-top: 10px;
+        padding-top: 10px;
+        width: fit-content;
+    }
+
+    #suzuki-method {
+        height: fit-content;
+        width: auto;
+        flex-direction: column;
+    }
+
+    #suzuki-method-text {
+        font-size: 14px;
+    }
+
+    .pricing-right {
+        margin-top: 10px;
+        padding-top: 10px;
+        width: fit-content;
+    }
+
+    .pricing-element {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #practicing-element {
+        padding: 10px;
+    }
+
+    .upcoming-events-title {
+        font-size: larger;
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+    .upcoming-events-content {
+        padding: 5px;
+    }
+
+    .no-events-display {
+        font-size: large;
+    }
+
+    .event {
+        padding: 10px;
+        width: fit-content;
+    }
+
+    .event-date {
+        font-size: 12px;
+    }
+
+    .event-info {
+        font-size: 16px;
+    }
+
+    #contact-title {
+        font-size: xx-large;
+    }
+
+    .contact-form {
+        width: fit-content;
+    }
+
+    .background {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        background-color: black;
+        z-index: -2000;
+        margin-top: -150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hymn-project-background {
+        position: relative;
+        height: fit-content;
+        width: 100vw;
+        z-index: 0;
+    }
+
+    .sound-sampler {
+        width: fit-content;
+        height: fit-content;
+        font-size: 24px;
+    }
+
+    #hymn-project-content-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hymn-project-info {
+        padding: 20px;
+    }
+
+    .hymn-project-about {
+        line-height: 150%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #hymn-background-video {
+        padding: 0;
+        margin-top: 10px;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    body.hymn-project-page {
+        opacity: 1;
+        background-color: black !important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .nav-bar {
+        padding: 5px;
+        margin: 40px;
+    }
+
+    .nav-bar li {
+        margin-right: 4vw
+    }
+
+    .parallax-2 {
+        height: fit-content;
+    }
+
+    #mission-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: fit-content;
+    }
+
+    #location {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #location-text-content {
+        font-size: 24px;
+        padding: 15px;
+        width: fit-content;
+        margin-right: 25px;
+    }
+
+    .location-div {
+        margin-top: 10px;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        font-weight: bolder;
+    }
+
+    #next-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #image-grid {
+        grid-template-columns: 200px 400px;
+        grid-template-rows: 300px 300px;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    #suzuki-method {
+        height: fit-content;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .pricing-element {
+        width: fit-content;
+    }
+
+    .pricing-element {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #parents-and-practicing {
+        width: fit-content;
+    }
+
+    .upcoming-events-title {
+        font-size: 55px;
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+    .upcoming-events-content {
+        padding: 5px;
+        padding-bottom: 40px;
+    }
+
+    .no-events-display {
+        font-size: xx-large;
+    }
+
+    .event {
+        padding: 10px;
+        width: fit-content;
+    }
+
+    .event-date {
+        font-size: 20px;
+    }
+
+    .event-info {
+        font-size: 24px;
+    }
+
+    #contact-title {
+        font-size: 40px;
+    }
+
+    .contact-form {
+        width: fit-content;
+    }
+
+    .hymn-project-background {
+        position: relative;
+        height: fit-content;
+        width: 100vw;
+        z-index: 0;
+    }
+
+    .sound-sampler {
+        width: fit-content;
+        height: fit-content;
+        font-size: 24px;
+    }
+
+    #hymn-project-content-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hymn-project-info {
+        padding: 20px;
+    }
+
+    .hymn-project-about {
+        line-height: 150%;
+        font-size: 36px;
+        padding: 50px;
+        margin-bottom: 100px;
+    }
+
+    #hymn-background-video {
+        padding: 0;
+        margin-top: 10px;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    body.hymn-project-page {
+        opacity: 1;
+        background-color: black !important;
+    }
 }

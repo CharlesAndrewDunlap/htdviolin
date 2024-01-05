@@ -11,7 +11,7 @@ import StudioContentParallax from '@/components/StudioContentParallax';
 
 export default function Studio() {
     //Change elements within the '' sections.
-    
+
     const suzukiQuote: string = '"The main concern for parents should be to bring up their children as noble human beings. That is sufficient. If this is not their greatest hope, in the end the child may take a road contrary to their expectations. Children can play very well. We must try to make them splendid in mind and heart also."';
     const missionStatement1: string = 'I believe in creating an engaging, positive setting which encourages students to approach music and all aspects of their lives with an inquisitive mind. While developing strong technique and a fundamental understanding of music, the lessons of violin will extend far beyond playing the instrument by rote, helping them become more \'noble human beings.\' As a teacher, I am attuned to the different strengths and needs of each student, helping them meet their own goals and encouraging them to reach further as they develop new ones.';
     const missionStatement2: string = 'A life-long learner, my dedication to violin has become an invaluable means of setting aside time to ask questions and challenge myself, skills I seek to share with my studio. I am excited to encourage my students to ask their own questions and to share their music with others.';
@@ -75,29 +75,29 @@ export default function Studio() {
                 <div className='content' id='location'>
                     <div className='location-div' id='location-text'>
                         <div className='location-div' id='location-text-inner'>
-                            <LineDecoration color='black' height={20}/>
+                            <LineDecoration color='black' height={20} />
                             <div id='location-text-content'>
                                 <h3>Location</h3>
                                 <br></br>
                                 <p>{currentLocation}</p>
                             </div>
-                            </div>
                         </div>
+                    </div>
                     <div className='location-div' id='image-grid'>
-                    <Image src='/TingTeaching.jpeg' alt='Ting sitting on a park bench' width={400} height={610} className='ting-teaching'/>
-                    <Image src='/TingTeaching1.JPG' alt='Ting working with a child on posture' width={200} height={300}/>
-                    <Image src='/TingTeaching2.JPG' alt='Ting working with a child on bow holds' width={200} height={300}/>
+                        <Image src='/TingTeaching.jpeg' alt='Ting sitting on a park bench' width={400} height={610} className='ting-teaching' id='next-image' />
+                        <Image src='/TingTeaching1.JPG' alt='Ting working with a child on posture' width={200} height={300} id='next-image' />
+                        <Image src='/TingTeaching2.JPG' alt='Ting working with a child on bow holds' width={200} height={300} id='next-image' />
                     </div>
                 </div>
             </StudioLocationParallax>
             <div className='content' id='suzuki-method'>
                 <div className='suzuki-method'>
-                    <LineDecoration color='white' height={20}/>
+                    <LineDecoration color='white' height={20} />
                     <div id='suzuki-method-text'>
                         <h3 id='suzuki-method-title'>The Suzuki Method</h3>
                         <div>{suzukiMethod1}<br></br><br></br>S. Suzuki</div>
                         <br></br><br></br>
-                        <div>{suzukiMethod2}</div><br></br><div style={{fontStyle: 'italic', marginBottom: '15px'}}>Read more from the Suzuki Association</div>
+                        <div>{suzukiMethod2}</div><br></br><div style={{ fontStyle: 'italic', marginBottom: '15px' }}>Read more from the Suzuki Association</div>
                         <a href='https://suzukiassociation.org/about/suzuki-method/' id='nav-button' target='_blank'>Learn More</a>
                     </div>
                 </div>
@@ -112,15 +112,15 @@ export default function Studio() {
                         <h3 className='price-element-title'>{"Let's Meet"}</h3>
                         <p className='price-text'>{"I offer a free 30 min trial lesson for students of all ages and experience. For those interested in beginning violin, this time can be used to get to know each other and share information about how to get started. Set up a meeting or send me your questions in the 'contact' tab."}</p>
                         <div className='scroll-element-div'>
-                        <ScrollElement className='scroll-element'/>
-                        <div style={{width: '50%'}}></div>
+                            <ScrollElement className='scroll-element' />
+                            <div style={{ width: '50%' }}></div>
                         </div>
                     </div>
                 </div>
             </div>
             <StudioContentParallax>
                 <div className='content'>
-                    <div className='pricing-right'>
+                    <div className='pricing-right' id='parents-and-practicing'>
                         <div className='pricing-element' id='practicing-element'>
                             <h3 id='practice-title'>Parents and Practicing</h3>
                             <p id='practice-text'>{practicingStatement}</p>
@@ -142,7 +142,7 @@ export default function Studio() {
                 <h2 className='upcoming-events-title'>Upcoming Studio Events</h2>
                 <div className='upcoming-events-content'>
                     {
-                        upcomingEvents.length ? upcomingEvents.map((e, i) => <Event date={e.date} event={e.event} location={e.location} key={i}/>) :
+                        upcomingEvents.length ? upcomingEvents.map((e, i) => <Event date={e.date} event={e.event} location={e.location} key={i} />) :
                             <div className='no-events-display'>No events currently!</div>
                     }
                 </div>

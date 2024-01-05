@@ -30,7 +30,7 @@ export default function Home() {
         setTitleOpacity(newOpacity);
       }
     }
-    
+
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -60,30 +60,30 @@ export default function Home() {
         </div>
       </Parallax>
       <Parallax bgImage={hymnalBackground} blur={15} strength={850}>
-      <div className='content' style={{height: '80vh', width: 'auto'}}>
-        <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity}}>
-          <h2 className='title'>The Hymn Project</h2>
-          <div className='horizontal-bar'></div>
-          <p className='description-text'>{hymnProjectDescription}</p>
-          <a href='/thehymnproject' className='nav-item' id='nav-button'>Experience</a>
+        <div className='content' id='hymn-content'>
+          <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity }}>
+            <h2 className='title'>The Hymn Project</h2>
+            <div className='horizontal-bar'></div>
+            <p className='description-text'>{hymnProjectDescription}</p>
+            <a href='/thehymnproject' className='nav-item' id='nav-button'>Experience</a>
+          </div>
         </div>
-      </div>
       </Parallax>
       <Parallax bgImage={tingVertical} blur={{ min: -3, max: 3 }} strength={500} className='parallax-2' bgImageStyle={{ opacity: '.3' }}>
-          <div className='bio-element'>
-            <h3 className='bio-title'>Bio</h3>
-            <p className='bio-quote'>&quot;She plays with duende, something many artists don&apos;t have.&quot;</p>
-            <div className='horizontal-line'></div>
-            <p className='short-bio'>{shortBio1}<br></br><br></br>{shortBio2}</p>
-            <div className='bio-download-div'>
+        <div className='bio-element'>
+          <h3 className='bio-title'>Bio</h3>
+          <p className='bio-quote'>&quot;She plays with duende, something many artists don&apos;t have.&quot;</p>
+          <div className='horizontal-line'></div>
+          <p className='short-bio'>{shortBio1}<br></br><br></br>{shortBio2}</p>
+          <div className='bio-download-div'>
             <a href='/HoiTingDavidsonBiography.pdf' download className='bio-download'>Download Biography
-            <FontAwesomeIcon icon={faCircleDown} className='download-svg' id='bio-download-svg'/>
+              <FontAwesomeIcon icon={faCircleDown} className='download-svg' id='bio-download-svg' />
             </a>
-            </div>
           </div>
+        </div>
       </Parallax>
       <ParallaxContent>
-          <ContactForm></ContactForm>
+        <ContactForm></ContactForm>
       </ParallaxContent>
     </div >
   )
