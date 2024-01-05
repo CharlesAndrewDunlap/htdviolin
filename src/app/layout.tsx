@@ -9,6 +9,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Hoi Ting Davidson, Violinist',
   description: 'The official website of Hoi Ting Davidson.',
+  keywords: ['Ting', 'Davidson', 'Violin', 'Hymn', 'Project', 'Studio', 'Hoi', 'Music'],
+  authors: [{ name: 'Hoi Ting Davidson' }],
+  creator: 'Charles Andrew Dunlap'
 }
 
 const montserrat = Montserrat({
@@ -25,7 +28,7 @@ export default function RootLayout({
 
   let style = typeof children === 'object' && 'props' in children! && children.props?.childProp.segment === 'thehymnproject' ? 'nav-item-hymn' : 'nav-item';
   let dropDownStyle = typeof children === 'object' && 'props' in children! && children?.props?.childProp.segment === 'thehymnproject' ? 'drop-down-hymn' : 'drop-down';
-  
+
   return (
     <html lang='en' className={montserrat.className}>
       <head>
@@ -56,7 +59,7 @@ export default function RootLayout({
               <a href='https://www.youtube.com/@tingdavidson' target='_blank' className={style}>Youtube</a>
             </li>
             <li>
-              <ScrollElement className={style}/>
+              <ScrollElement className={style} />
             </li>
             <li className={dropDownStyle}>Professional
               <ul className='nav-drop-down'>

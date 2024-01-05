@@ -8,6 +8,15 @@ import ParallaxContent from '@/components/ParallaxContent';
 import StudioBannerParallax from '../../components/StudioBannerParallax';
 import StudioLocationParallax from '@/components/StudioLocationParallax';
 import StudioContentParallax from '@/components/StudioContentParallax';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Studio | Hoi Ting Davidson, Violinist',
+    description: 'Learn about my teaching style and upcoming studio events.',
+    keywords: ['Ting', 'Davidson', 'Teaching', 'Teacher', 'Studio', 'Events', 'Recital', 'Violin'],
+    authors: [{ name: 'Hoi Ting Davidson' }],
+    creator: 'Charles Andrew Dunlap'
+}
 
 export default function Studio() {
     //Change elements within the '' sections.

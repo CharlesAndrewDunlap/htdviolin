@@ -2,8 +2,16 @@ import ContactForm from "@/components/ContactForm";
 import Fader from "../../components/Fader";
 import Event, { EventDetails } from "@/components/Event";
 import SoundSampler from "@/components/SoundSampler";
-import Image from "next/image";
 import ColorChange from "@/components/ColorChange";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'The Hymn Project | Hoi Ting Davidson, Violinist',
+    description: 'Experience The Hymn Project and see tour dates.',
+    keywords: ['Ting', 'Davidson', 'Hymn', 'Project', 'Mennonite', 'Hymns', 'Violin', 'Tour'],
+    authors: [{ name: 'Hoi Ting Davidson' }],
+    creator: 'Charles Andrew Dunlap'
+}
 
 export default function HymnProject() {
     const hymnProjectInfo: string = "The Hymn Project is centered around bringing the beauty and depth of hymns to string ensemble and exploring how these old traditions pass down and invite us to experience something greater than ourselves.";

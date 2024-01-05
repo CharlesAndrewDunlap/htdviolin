@@ -39,7 +39,7 @@ export default function ContactForm() {
             alert('Please check the ReCAPTCHA box before submitting.');
             return;
         }
-        else {  
+        else {
             const button = e.currentTarget.querySelector('#submit-button');
             const sentData: Response = await fetch('/contact', {
                 method: 'POST',
@@ -53,7 +53,7 @@ export default function ContactForm() {
                     'Content-Type': 'application/json',
                 }
             })
-    
+
             if (sentData.status === 200) {
                 displaySuccess(button);
                 setTimeout(() => {
@@ -63,7 +63,7 @@ export default function ContactForm() {
                     setMessage('');
                     setIsVerified(false);
                 }, 1000);
-            } 
+            }
         }
     }
 
@@ -73,7 +73,7 @@ export default function ContactForm() {
             await verifyCaptcha(token)
             setIsVerified(true);
         }
-        catch(error) {
+        catch (error) {
             setIsVerified(false);
         }
     }
@@ -95,18 +95,18 @@ export default function ContactForm() {
     }
 
     return (
-        <div style={{height: '100vh'}}>
+        <div style={{ height: '100vh' }}>
             {sentMessage && <div className={`confirmation-message ${animationType}`}>Message Sent</div>}
             <div>
-            <h2 className='title' id='contact-title'>Contact Me</h2>
-            <form onSubmit={handleSubmit} className='contact-form'>
-                <input className='form-item' type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}></input>
-                <input className='form-item' type='text' placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                <input className='form-item' type='text' placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)}></input>
-                <textarea className='form-item' id='form-message' placeholder='Message. . .' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                <ReCAPTCHA className='captcha' type='image' sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string} ref={recaptchaRef} onChange={handleCaptchaSubmission}/>
-                <button className='form-item' id='submit-button' type='submit' disabled={!isVerified}>{submitText}</button>
-            </form>
+                <h2 className='title' id='contact-title'>Contact Me</h2>
+                <form onSubmit={handleSubmit} className='contact-form'>
+                    <input className='form-item' type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}></input>
+                    <input className='form-item' type='text' placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                    <input className='form-item' type='text' placeholder='Subject' value={subject} onChange={(e) => setSubject(e.target.value)}></input>
+                    <textarea className='form-item' id='form-message' placeholder='Message. . .' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                    <ReCAPTCHA className='captcha' type='image' sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string} ref={recaptchaRef} onChange={handleCaptchaSubmission} />
+                    <button className='form-item' id='submit-button' type='submit' disabled={!isVerified}>{submitText}</button>
+                </form>
             </div>
         </div>
     )

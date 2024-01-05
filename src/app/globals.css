@@ -187,8 +187,11 @@ body {
 .title {
     margin: 25px;
     color: whitesmoke;
-    font-size: xx-large;
-    font-style: italic;
+    font-size: 50px;
+    /* font-style: italic; */
+    font-weight: 300;
+    text-align: center;
+    line-height: 200%;
 }
 
 #main-title {
@@ -237,6 +240,9 @@ body {
 
 #full-height-content {
     height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parallax-1 {
@@ -822,6 +828,7 @@ body.hymn-project-page {
         flex-direction: column;
         align-items: stretch;
         padding: 5px;
+        padding-top: 30px;
         margin: 20px 10px;
         margin-top: 5px;
         font-size: 12.5px;
@@ -838,14 +845,33 @@ body.hymn-project-page {
 
     #full-height-content {
         padding-top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .title {
-        font-size: x-large;
+        font-size: 28px;
+        font-weight: 100;
+    }
+
+    #main-title {
+        width: 100vw;
+        font-size: 34px;
+        font-weight: 200;
+        position: absolute;
+        top: 8%
+    }
+
+    #main-title-2 {
+        position: absolute;
+        top: 22.5%;
     }
 
     #hymn-content {
-        height: 100vh;
+        height: fit-content;
+        padding-bottom: 40px;
+        padding-top: 10px;
     }
 
     .description-text {
@@ -993,6 +1019,8 @@ body.hymn-project-page {
 
     .upcoming-events-content {
         padding: 5px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .no-events-display {
@@ -1017,7 +1045,11 @@ body.hymn-project-page {
     }
 
     .contact-form {
-        width: fit-content;
+        width: 90vw;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
     }
 
     .background {
@@ -1054,9 +1086,11 @@ body.hymn-project-page {
     }
 
     .hymn-project-about {
-        line-height: 150%;
-        font-size: 14px;
+        line-height: 200%;
+        font-size: 20px;
         padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     #hymn-background-video {
