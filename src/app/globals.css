@@ -811,7 +811,8 @@ textarea:focus {
 
 .hymn-project-info {
     color: whitesmoke;
-    padding: 160px;
+    padding: 100px;
+    width: 100%;
 }
 
 .hymn-project-about {
@@ -820,6 +821,7 @@ textarea:focus {
     font-size: 26px;
     border-bottom: 1px solid #edc43d;
     border-top: 1px solid #edc43d;
+    width: 100%;
 }
 
 #hymn-project-events {
