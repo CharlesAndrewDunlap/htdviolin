@@ -4,6 +4,7 @@ import Event, { EventDetails } from "@/components/Event";
 import SoundSampler from "@/components/SoundSampler";
 import ColorChange from "@/components/ColorChange";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: 'The Hymn Project | Hoi Ting Davidson, Violinist',
@@ -38,7 +39,7 @@ export default function HymnProject() {
     return (
         <>
             <div className='background'>
-                {/* <Image src={backgroundPlaceholder} alt='The Hymn Project Logo' className='hymn-project-background' layout='fill' objectFit='cover'/> */}
+                <Image src={backgroundPlaceholder} alt='The Hymn Project Logo' className='hymn-project-background-image' width={250} height={250} objectFit='cover' />
                 <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' poster={backgroundPlaceholder} autoPlay muted loop></video>
                 <SoundSampler />
             </div>

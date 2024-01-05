@@ -364,6 +364,16 @@ textarea:focus {
     object-fit: cover;
 }
 
+.hymn-project-background-image {
+    display: none;
+    position: fixed;
+    object-fit: cover;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+}
+
 .background {
     height: 100vh;
     width: 100vw;
@@ -1070,10 +1080,15 @@ body.hymn-project-page {
     }
 
     .hymn-project-background {
+        display: none;
         position: relative;
         height: fit-content;
         width: 100vw;
         z-index: 0;
+    }
+
+    .hymn-project-background-image {
+        display: block;
     }
 
     .sound-sampler {
@@ -1228,10 +1243,18 @@ body.hymn-project-page {
     }
 
     .hymn-project-background {
+        display: none;
         position: relative;
         height: fit-content;
         width: 100vw;
         z-index: 0;
+    }
+
+    .hymn-project-background-image {
+        display: block;
+        object-fit: fill;
+        width: 100vw;
+        height: auto;
     }
 
     .sound-sampler {

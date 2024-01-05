@@ -23,8 +23,7 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const mainTitle = document.getElementById('main-title');
-      const mainTitle2 = document.getElementById('main-title-2');
-      if (mainTitle && mainTitle2) {
+      if (mainTitle) {
         const scrollY = window.scrollY;
         const titleRect = mainTitle.getBoundingClientRect();
         const newOpacity = Math.max(.2 - ((scrollY - 650) - titleRect.top) / 600, 0);
@@ -57,7 +56,7 @@ export default function Home() {
       <Fader></Fader>
       <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
         <div className='content' id='full-height-content'>
-          <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson</h2><br></br><h2 style={{ opacity: titleOpacity }} className='title' id='main-title-2'>VIOLIN</h2>
+          <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
         </div>
       </Parallax>
       <Parallax bgImage={hymnalBackground} blur={15} strength={850}>
