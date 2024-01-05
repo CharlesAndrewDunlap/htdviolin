@@ -196,6 +196,12 @@ body {
 
 #main-title {
     margin-top: 30%;
+    font-size: 60px;
+}
+
+#main-title-2 {
+    margin-top: -50px;
+    font-size: 45px;
 }
 
 .subtitle {
@@ -1115,6 +1121,10 @@ body.hymn-project-page {
 
     .nav-bar li {
         margin-right: 4vw
+    }
+
+    #main-title {
+        margin-top: 60%;
     }
 
     .parallax-2 {
