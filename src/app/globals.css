@@ -1146,6 +1146,19 @@ body.hymn-project-page {
         height: fit-content;
     }
 
+    .bio-element {
+        padding: 10px;
+        width: 50vw;
+    }
+
+    .bio-quote {
+        font-size: 22px;
+    }
+
+    .short-bio {
+        font-size: 18px;
+    }
+
     #mission-content {
         padding-top: 20px;
         padding-bottom: 20px;

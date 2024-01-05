@@ -71,7 +71,7 @@ export default function Home() {
       </Parallax>
       <Parallax bgImage={tingVertical} blur={{ min: -3, max: 3 }} strength={500} className='parallax-2' bgImageStyle={{ opacity: '.3' }}>
         <div className='bio-element'>
-          <h3 className='bio-title'>Bio</h3>
+          <h3 className='bio-title'>About</h3>
           <p className='bio-quote'>&quot;She plays with duende, something many artists don&apos;t have.&quot;</p>
           <div className='horizontal-line'></div>
           <p className='short-bio'>{shortBio1}<br></br><br></br>{shortBio2}</p>
