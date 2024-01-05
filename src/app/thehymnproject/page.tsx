@@ -39,7 +39,7 @@ export default function HymnProject() {
     return (
         <>
             <div className='background'>
-                <Image src={backgroundPlaceholder} alt='The Hymn Project Logo' className='hymn-project-background-image' width={250} height={250} objectFit='cover' />
+                <Image src={backgroundPlaceholder} alt='The Hymn Project Logo' className='hymn-project-background-image' width={230} height={230} objectFit='cover' />
                 <video src='HymnProjectBackgroundFinal.mp4' className='hymn-project-background' poster={backgroundPlaceholder} autoPlay muted loop></video>
                 <SoundSampler />
             </div>
