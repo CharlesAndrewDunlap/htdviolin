@@ -4,6 +4,7 @@ import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
 import { Montserrat } from 'next/font/google';
 import ScrollElement from '../components/ScrollElement';
 import React, { ReactNode } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function RootLayout({
           </ul>
         </nav>
         {children}
+        <Analytics />
       </body>
     </html>
   )
