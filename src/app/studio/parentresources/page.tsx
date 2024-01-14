@@ -114,6 +114,12 @@ export default function ParentResources() {
                             </a>
                             <Image src='/ICanReadMusic.jpeg' alt='I Can Read Music Volume 1' width={600} height={474} layout='responsive' />
                         </div>
+                        <div className='carousel-element'>
+                            <a href='' className='carousel-hover-overlay'>
+                                <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
+                            </a>
+                            <Image src='/ICanReadMusic.jpeg' alt='I Can Read Music Volume 1' width={600} height={474} layout='responsive' />
+                        </div>
                     </div>
                 </div>
 
