@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Montserrat } from 'next/font/google';
 import ScrollElement from '../components/ScrollElement';
 import React, { ReactNode } from 'react';
@@ -43,8 +45,17 @@ export default function RootLayout({
             <li>
               <a href='/' className={style}>Home</a>
             </li>
-            <li>
-              <a href='/studio' className={style}>Studio</a>
+            <li className={dropDownStyle}>Studio
+              <ul className='nav-drop-down'>
+                <li className='drop-down-item'>
+                  <a href='/studio' className={style}>Studio Home</a>
+                  <FontAwesomeIcon icon={faChevronRight as IconProp} className='download-svg' id='nav-arrow' />
+                </li>
+                <li className='drop-down-item'>
+                  <a href='/studio/parentresources' className={style}>Parent Resources</a>
+                  <FontAwesomeIcon icon={faChevronRight as IconProp} className='download-svg' id='nav-arrow' />
+                </li>
+              </ul>
             </li>
             <li>
               <a href='/thehymnproject' className={style}>The Hymn Project</a>

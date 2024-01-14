@@ -69,7 +69,7 @@ export default function Studio() {
 
     return (
         <>
-            <StudioBannerParallax />
+            <StudioBannerParallax page='studio' />
             <div className='content' id='mission-content'>
                 <div id='suzuki-div'>
                     <p id='suzuki-quote'>{suzukiQuote}<br></br><br></br></p><p id='suzuki-signature'>-Shinichi Suzuki</p>
