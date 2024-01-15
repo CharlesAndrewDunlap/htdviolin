@@ -20,6 +20,7 @@ export default function Carousel(props: CarouselProps) {
 
     useEffect(() => {
         const carousel = document.querySelector('.carousel-track') as HTMLElement;
+        const viewableArea = document.querySelector('.image-carousel') as HTMLElement;
         const elementWidth: number = 400;
         let index: number = 0;
 
@@ -59,57 +60,8 @@ export default function Carousel(props: CarouselProps) {
                             return <CarouselCard key={i} fileName={el.title} url={el.url} />
                         })
                     }
-                    {/* <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/ICanReadMusicVolume1.jpeg' alt='I Can Read Music Volume 1' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/ICanReadMusicVolume2.jpeg' alt='I Can Read Music Volume 2' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/IntroducingThePositionsForViolinVolume1.jpg' alt='Introducing The Positions For Violin Volume 1' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/IntroducingThePositionsForViolinVolume2.jpg' alt='Introducing The Positions For Violin Volume 2' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/MelodiousDoubleStops.jpg' alt='Melodious Double Stops' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/Kreutzer42Studies.jpeg' alt='Kreutzer 42 Studies' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/ScalesForAdvancedViolinists.jpg' alt='Scales For Advanced Violinists' layout='fill' objectFit='contain' />
-                    </div>
-                    <div className='carousel-element'>
-                        <a href='' className='carousel-hover-overlay'>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='carousel-svg' />
-                        </a>
-                        <Image src='/MazasEtudesSpecialesOpus36Book1.jpeg' alt='Mazas Etudes Speciales Opus 36 Book 1' layout='fill' objectFit='contain' />
-                    </div> */}
                 </div>
             </div>
-
             <FontAwesomeIcon icon={faChevronRight} className='carousel-arrow' id='right-arrow' />
         </div>
     )
