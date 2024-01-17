@@ -7,10 +7,12 @@ import ContactForm from '@/components/ContactForm';
 import ParallaxContent from '@/components/ParallaxContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDown } from '@fortawesome/free-regular-svg-icons';
+import Image from 'next/image';
 
 export default function Home() {
   const [titleOpacity, setTitleOpacity] = useState(1);
   const [hymnContentOpacity, setHymnContentOpacity] = useState(1);
+  
 
   const backgroundImage: string = '/TingBackground.jpg';
   const tingVertical: string = '/tingvertical.jpg';
@@ -54,11 +56,21 @@ export default function Home() {
   return (
     <div className='App'>
       <Fader></Fader>
-      <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
-        <div className='content' id='full-height-content'>
-          <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
-        </div>
-      </Parallax>
+      {
+        window.innerWidth > 800 ?
+          <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
+            <div className='content' id='full-height-content'>
+              <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
+            </div>
+          </Parallax>
+          :
+          <div className='parallax-1' style={{width: '100%'}}>
+            <Image src={backgroundImage} alt='Background of Ting playing violin' width={5602} height={3735} layout='responsive' />
+              <div >
+                <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
+              </div>
+          </div>
+      }
       <Parallax bgImage={hymnalBackground} blur={15} strength={850}>
         <div className='content' id='hymn-content'>
           <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity }}>

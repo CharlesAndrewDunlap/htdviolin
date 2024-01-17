@@ -856,6 +856,16 @@ body.hymn-project-page {
     background-color: black !important;
 }
 
+.carousel-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
 .carousel-container {
     position: relative;
     padding-top: 5vh;

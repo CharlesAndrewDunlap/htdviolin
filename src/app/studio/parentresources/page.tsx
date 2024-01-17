@@ -28,6 +28,7 @@ export default function ParentResources() {
         <>
             <StudioBannerParallax page='parent' />
             <Carousel title={parentResources.title as string} sheetMusic={parentResources.sheetMusic as Resource[]} />
+            <Carousel title={parentResources.title as string} sheetMusic={parentResources.sheetMusic as Resource[]} />
             <Fader />
         </>
     )

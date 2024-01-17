@@ -51,6 +51,8 @@ export default function Carousel(props: CarouselProps) {
     }, []);
 
     return (
+        <div className='carousel-component'>
+            <h2 className='carousel-title'>{props.title}</h2>
         <div className='carousel-container' id='book-carousel'>
             <FontAwesomeIcon icon={faChevronLeft} className='carousel-arrow' id='left-arrow' />
             <div className='image-carousel'>
@@ -63,6 +65,7 @@ export default function Carousel(props: CarouselProps) {
                 </div>
             </div>
             <FontAwesomeIcon icon={faChevronRight} className='carousel-arrow' id='right-arrow' />
+        </div>
         </div>
     )
 
