@@ -856,20 +856,24 @@ body.hymn-project-page {
     background-color: black !important;
 }
 
+.carousel-component {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .carousel-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     font-size: 50px;
-    text-decoration: underline;
 }
 
 .carousel-container {
     position: relative;
     padding-top: 5vh;
-    height: 30vh;
+    height: 40vh;
     align-items: center;
     justify-content: center;
 }
@@ -938,6 +942,12 @@ body.hymn-project-page {
 .carousel-hover-overlay:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.resource-grid {
+    position: relative;
+    display: flex;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 480px) {

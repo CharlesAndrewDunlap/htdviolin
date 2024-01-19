@@ -1,6 +1,7 @@
 import Carousel from '@/components/Carousel';
 import Fader from '@/components/Fader';
 import StudioBannerParallax from '@/components/StudioBannerParallax';
+import Image from 'next/image';
 
 interface Resource {
     title: string,
@@ -28,7 +29,15 @@ export default function ParentResources() {
         <>
             <StudioBannerParallax page='parent' />
             <Carousel title={parentResources.title as string} sheetMusic={parentResources.sheetMusic as Resource[]} />
-            <Carousel title={parentResources.title as string} sheetMusic={parentResources.sheetMusic as Resource[]} />
+            <div className='resource-grid'>
+                <Image src={'/headphones.jpeg'} alt='Suzuki Recordings' layout='fill' objectFit='contain'/>
+                <Image src={'/musicstand.jpeg'} alt='Peak Music Stands' layout='fill' objectFit='contain'/>
+                <Image src={'/manhassetmusicstand.jpeg'} alt='Manhasset Music Stands' layout='fill' objectFit='contain'/>
+                <Image src={'/sharmusiclogo.jpeg'} alt='Shar Music Online Store For Supplies' layout='fill' objectFit='contain'/>
+                <Image src={'/nurturedbylove.jpeg'} alt='Nurtured By Love Book' layout='fill' objectFit='contain'/>
+                <Image src={'/beyondthemusiclesson.jpg'} alt='Beyond the Music Lesson Book' layout='fill' objectFit='contain'/>
+                <Image src={'/helpingparentspractice.jpg'} alt='Helping Parents Practice: Ideas for Making it Easier Book' layout='fill' objectFit='contain'/>
+            </div>
             <Fader />
         </>
     )
