@@ -256,7 +256,7 @@ body {
 }
 
 .parallax-2 {
-    height: 200vh;
+    height: fit-content;
     object-fit: cover;
     object-position: center middle;
 }
