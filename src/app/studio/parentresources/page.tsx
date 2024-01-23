@@ -28,39 +28,41 @@ export default function ParentResources() {
     return (
         <>
             <StudioBannerParallax page='parent' />
+            <div className='supply-and-book-resources'>
             <Carousel title={parentResources.title as string} sheetMusic={parentResources.sheetMusic as Resource[]} />
-            <h2 className='carousel-title'>Supplies</h2>
-            <div className='resource-row-top'>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.alfred.com/suzuki-method/suzuki-audio-downloads/' className='carousel-hover-overlay text'>Suzuki Recordings</a>
-                    <Image src={'/headphones.jpeg'} alt='Suzuki Recordings' className='resource-grid-image' width={400} height={400}/>
+                <h2 className='carousel-title'>Supplies</h2>
+                <div className='resource-row-top'>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.alfred.com/suzuki-method/suzuki-audio-downloads/' className='carousel-hover-overlay text'>Suzuki Recordings</a>
+                        <Image src={'/headphonegraphic.jpg'} alt='Suzuki Recordings' className='resource-grid-image' width={400} height={400}/>
+                    </div>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.peakmusicstands.com/' className='carousel-hover-overlay text'>Peak Music Stands</a>
+                        <Image src={'/musicstand.jpeg'} alt='Peak Music Stands' className='resource-grid-image' width={400} height={400}/>
+                    </div>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.manhasset-specialty.com/shop/?c=96218/SingleStands' className='carousel-hover-overlay text'>Manhasset Music Stands</a>
+                        <Image src={'/manhassetmusicstand.jpeg'} alt='Manhasset Music Stands' className='resource-grid-image' width={400} height={400}/>
+                    </div>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.sharmusic.com/' className='carousel-hover-overlay text'>Supplies</a>
+                        <Image src={'/sharmusiclogo.png'} alt='Shar Music Online Store For Supplies' className='resource-grid-image' width={400} height={400}/>
+                    </div>
                 </div>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.peakmusicstands.com/' className='carousel-hover-overlay text'>Peak Music Stands</a>
-                    <Image src={'/musicstand.jpeg'} alt='Peak Music Stands' className='resource-grid-image' width={400} height={400}/>
-                </div>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.manhasset-specialty.com/shop/?c=96218/SingleStands' className='carousel-hover-overlay text'>Manhasset Music Stands</a>
-                    <Image src={'/manhassetmusicstand.jpeg'} alt='Manhasset Music Stands' className='resource-grid-image' width={400} height={400}/>
-                </div>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.sharmusic.com/' className='carousel-hover-overlay text'>Supplies</a>
-                    <Image src={'/sharmusiclogo.png'} alt='Shar Music Online Store For Supplies' className='resource-grid-image' width={400} height={400}/>
-                </div>
-            </div>
-            <h2 className='carousel-title'>Books</h2>
-            <div className='resource-row-bottom'>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.amazon.com/Nurtured-Love-Translated-Original-Japanese/dp/0739090445/ref=tmm_pap_title_0?ie=UTF8&qid=1408145242&sr=8-1' className='carousel-hover-overlay text'>Purchase</a>
-                    <Image src={'/nurturedbylove.jpeg'} alt='Nurtured By Love Book' className='resource-grid-image' width={200} height={400}/>
-                </div>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.amazon.com/Beyond-Music-Lesson-Successful-Families/dp/0999119206/ref=pd_sbs_d_sccl_2_1/130-7688252-8811324?pd_rd_w=awUjG&content-id=amzn1.sym.d95de1d6-8400-4c9d-8ae8-144769325aef&pf_rd_p=d95de1d6-8400-4c9d-8ae8-144769325aef&pf_rd_r=K0NBQDVHNDNANW16KSC6&pd_rd_wg=8TMRN&pd_rd_r=e02dae11-69bf-456b-b06a-5428d2a88369&pd_rd_i=0999119206&psc=1' className='carousel-hover-overlay text'>Purchase</a>
-                    <Image src={'/beyondthemusiclesson.jpg'} alt='Beyond the Music Lesson Book' className='resource-grid-image' width={200} height={400}/>
-                </div>
-                <div className='img-cont'>
-                    <a target='_blank' href='https://www.amazon.com/Helping-Parents-Practice-Making-Easier/dp/0976785439/ref=pd_sim_d_sccl_3_4/130-7688252-8811324?pd_rd_w=t95bi&content-id=amzn1.sym.95c9984b-e881-4eb8-9a85-bd9add50dfd7&pf_rd_p=95c9984b-e881-4eb8-9a85-bd9add50dfd7&pf_rd_r=K0NBQDVHNDNANW16KSC6&pd_rd_wg=8TMRN&pd_rd_r=e02dae11-69bf-456b-b06a-5428d2a88369&pd_rd_i=0976785439&psc=1#customerReviews' className='carousel-hover-overlay text'>Purchase</a>
-                    <Image src={'/helpingparentspractice.jpg'} alt='Helping Parents Practice: Ideas for Making it Easier Book' className='resource-grid-image' width={200} height={400}/>
+                <h2 className='carousel-title'>Books</h2>
+                <div className='resource-row-bottom'>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.amazon.com/Nurtured-Love-Translated-Original-Japanese/dp/0739090445/ref=tmm_pap_title_0?ie=UTF8&qid=1408145242&sr=8-1' className='carousel-hover-overlay text'>Purchase</a>
+                        <Image src={'/nurturedbylove.jpeg'} alt='Nurtured By Love Book' className='resource-grid-image-2' width={200} height={400}/>
+                    </div>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.amazon.com/Beyond-Music-Lesson-Successful-Families/dp/0999119206/ref=pd_sbs_d_sccl_2_1/130-7688252-8811324?pd_rd_w=awUjG&content-id=amzn1.sym.d95de1d6-8400-4c9d-8ae8-144769325aef&pf_rd_p=d95de1d6-8400-4c9d-8ae8-144769325aef&pf_rd_r=K0NBQDVHNDNANW16KSC6&pd_rd_wg=8TMRN&pd_rd_r=e02dae11-69bf-456b-b06a-5428d2a88369&pd_rd_i=0999119206&psc=1' className='carousel-hover-overlay text'>Purchase</a>
+                        <Image src={'/beyondthemusiclesson.jpg'} alt='Beyond the Music Lesson Book' className='resource-grid-image-2' width={200} height={400}/>
+                    </div>
+                    <div className='img-cont'>
+                        <a target='_blank' href='https://www.amazon.com/Helping-Parents-Practice-Making-Easier/dp/0976785439/ref=pd_sim_d_sccl_3_4/130-7688252-8811324?pd_rd_w=t95bi&content-id=amzn1.sym.95c9984b-e881-4eb8-9a85-bd9add50dfd7&pf_rd_p=95c9984b-e881-4eb8-9a85-bd9add50dfd7&pf_rd_r=K0NBQDVHNDNANW16KSC6&pd_rd_wg=8TMRN&pd_rd_r=e02dae11-69bf-456b-b06a-5428d2a88369&pd_rd_i=0976785439&psc=1#customerReviews' className='carousel-hover-overlay text'>Purchase</a>
+                        <Image src={'/helpingparentspractice.jpg'} alt='Helping Parents Practice: Ideas for Making it Easier Book' className='resource-grid-image-2' width={200} height={400}/>
+                    </div>
                 </div>
             </div>
             <Fader />

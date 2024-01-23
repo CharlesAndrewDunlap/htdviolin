@@ -547,6 +547,12 @@ textarea:focus {
     margin-bottom: 1.5em;
 }
 
+.parent-resource-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #nav-button {
     text-decoration: none;
     color: whitesmoke;
@@ -554,6 +560,7 @@ textarea:focus {
     border-radius: 5px;
     padding: 10px;
     transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    width: fit-content;
 }
 
 #nav-button:hover {
@@ -656,6 +663,7 @@ textarea:focus {
     font-size: 15.5px;
     font-weight: 100;
     color: #d4d4d4;
+    padding-bottom: 30px;
 }
 
 #practice-bullet-points li {
@@ -964,6 +972,13 @@ body.hymn-project-page {
     object-fit: contain;
     width: 300px;
     height: 300px;
+    border: 1px solid black;
+}
+
+.resource-grid-image-2 {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
 }
 
 .text {
@@ -979,6 +994,10 @@ body.hymn-project-page {
 
 .text:hover {
     opacity: 0.8;
+}
+
+.supply-and-book-resources {
+    background: radial-gradient(#f69d3c, #3f87a6);
 }
 
 
@@ -1233,6 +1252,11 @@ body.hymn-project-page {
         margin-left: 10px;
         padding-right: 10px;
         margin-right: 10px;
+    }
+
+    .carousel-title {
+        font-weight: 100;
+        font-size: 40px;
     }
 
     .background {

@@ -143,6 +143,7 @@ export default function Studio() {
                                 <li>- Instigating daily listening to the Suzuki Book recordings. Kids need to listen to violin playing to learn the subtleties of what to imitate, just like babies need to hear a language in order to speak it.</li>
                                 <li>- Initiate listening to classical/violin music at home and attending several live performances each year.</li>
                             </ul>
+                            <a href='studio/parentresources' className='parent-resource-link' id='nav-button'>Parent Resource Page</a>
                         </div>
                     </div>
                 </div>
