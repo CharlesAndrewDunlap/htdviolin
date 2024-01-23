@@ -12,7 +12,7 @@ import Image from 'next/image';
 export default function Home() {
   const [titleOpacity, setTitleOpacity] = useState(1);
   const [hymnContentOpacity, setHymnContentOpacity] = useState(1);
-  
+  const [isWideScreen, setIsWideScreen] = useState<boolean>(false);
 
   const backgroundImage: string = '/TingBackground.jpg';
   const tingVertical: string = '/tingvertical.jpg';
@@ -39,6 +39,10 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    setIsWideScreen(window.innerWidth > 800);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const hymnProjectContent = document.getElementById('hymn-project-content');
       if (hymnProjectContent) {
@@ -57,15 +61,15 @@ export default function Home() {
     <div className='App'>
       <Fader></Fader>
       {
-        window.innerWidth > 800 ?
+        isWideScreen ?
           <Parallax bgImage={backgroundImage} strength={500} className='parallax-1'>
             <div className='content' id='full-height-content'>
               <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
             </div>
           </Parallax>
           :
-          <div className='parallax-1' style={{width: '100%'}}>
-            <Image src={backgroundImage} alt='Background of Ting playing violin' width={5602} height={3735} layout='responsive' />
+          <div className='parallax-1' style={{width: '100%', height: '100vh', overflow: 'hidden'}}>
+            <Image src={backgroundImage} alt='Background of Ting playing violin' layout='fill' objectFit='cover' className='landing-img-replacement' />
               <div >
                 <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
               </div>

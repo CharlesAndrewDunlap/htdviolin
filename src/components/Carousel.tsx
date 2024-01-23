@@ -2,7 +2,6 @@
 
 import { faChevronLeft, faChevronRight, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import CarouselCard from './CarouselCard';
 
@@ -93,5 +92,4 @@ export default function Carousel(props: CarouselProps) {
         </div>
         </div>
     )
-
 }

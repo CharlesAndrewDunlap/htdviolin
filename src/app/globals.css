@@ -982,7 +982,7 @@ body.hymn-project-page {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 730px) {
     .nav-bar {
         flex-direction: column;
         align-items: stretch;
@@ -1002,6 +1002,15 @@ body.hymn-project-page {
         margin-bottom: 15px;
     }
 
+    .nav-bar .nav-drop-down .drop-down-item {
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 0;
+    }
+
+    #nav-arrow {
+        right: 8px
+    }
+
     #full-height-content {
         padding-top: 20vh;
         display: flex;
@@ -1015,11 +1024,13 @@ body.hymn-project-page {
     }
 
     #main-title {
-        width: 100vw;
-        font-size: 34px;
+        font-size: 32px;
         font-weight: 200;
         position: absolute;
-        top: 8%
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
     }
 
     #main-title-2 {
@@ -1040,6 +1051,19 @@ body.hymn-project-page {
 
     #nav-button {
         margin-top: 10px;
+    }
+
+    .parallax-1 {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .landing-img-replacement {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
     }
 
     .parallax-2 {
@@ -1222,6 +1246,10 @@ body.hymn-project-page {
         align-items: center;
     }
 
+    .resource-row-top, .resource-row-bottom {
+        flex-direction: column;
+    }
+
     .hymn-project-background {
         display: none;
         position: relative;
@@ -1271,7 +1299,7 @@ body.hymn-project-page {
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 731px) and (max-width: 1024px) {
     .nav-bar {
         padding: 5px;
         margin: 40px;
@@ -1281,11 +1309,20 @@ body.hymn-project-page {
         margin-right: 4vw
     }
 
+    .nav-bar .nav-drop-down .drop-down-item {
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 0;
+    }
+
     #main-title {
         margin-top: 60%;
     }
 
     .parallax-2 {
+        height: fit-content;
+    }
+
+    #hymn-content {
         height: fit-content;
     }
 
@@ -1446,5 +1483,9 @@ body.hymn-project-page {
     body.hymn-project-page {
         opacity: 1;
         background-color: black !important;
+    }
+
+    .resource-row-top, .resource-row-bottom {
+        flex-direction: column;
     }
 }
