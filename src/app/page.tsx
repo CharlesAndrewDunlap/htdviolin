@@ -75,7 +75,7 @@ export default function Home() {
               </div>
           </div>
       }
-      <Parallax bgImage={hymnalBackground} blur={15} strength={850}>
+      <Parallax bgImage={hymnalBackground} blur={15} strength={850} className='parallax-2'>
         <div className='content' id='hymn-content'>
           <div className='content' id='hymn-project-content' style={{ opacity: hymnContentOpacity }}>
             <h2 className='title'>The Hymn Project</h2>
