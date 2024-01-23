@@ -37,6 +37,10 @@ export default function RootLayout({
       <head>
         {/* <link rel='preload' href='/TingBackground.jpg' as='image'></link> */}
         {/* <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional' rel='stylesheet'></link> */}
+        <link rel='icon' href='/favicon.ico'></link>
+        <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'></link>
+        <link rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png'></link>
+        <link rel='shortcut icon' href='/favicon.ico'></link>
         <script src='https://www.google.com/recaptcha/api.js' async defer></script>
       </head>
       <body>
