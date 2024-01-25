@@ -68,12 +68,13 @@ export default function Home() {
             </div>
           </Parallax>
           :
-          <div className='parallax-1' style={{width: '100%', height: '100vh', overflow: 'hidden'}}>
+          <div className='parallax-1'>
             <Image src={backgroundImage} alt='Background of Ting playing violin' layout='fill' objectFit='cover' className='landing-img-replacement' />
               <div >
                 <h2 className='title' id='main-title' style={{ opacity: titleOpacity }}>Hoi Ting Davidson<br></br>Violin</h2>
               </div>
           </div>
+          
       }
       <Parallax bgImage={hymnalBackground} blur={15} strength={850} className='parallax-2'>
         <div className='content' id='hymn-content'>
