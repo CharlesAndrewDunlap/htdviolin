@@ -1074,13 +1074,13 @@ body.hymn-project-page {
 
     .parallax-1 {
         width: 100%;
-        height: 110vh;
+        height: 90vh;
         overflow: hidden;
     }
 
     .landing-img-replacement {
         width: 100%;
-        height: 110vh;
+        height: 90vh;
         overflow: hidden;
         position: relative;
     }
