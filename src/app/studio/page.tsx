@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   keywords: [
     "Ting",
     "Davidson",
+    "Violin",
     "Teaching",
     "Teacher",
     "Studio",
     "Events",
     "Recital",
-    "Violin",
   ],
   authors: [{ name: "Hoi Ting Davidson" }],
   creator: "Charles Andrew Dunlap",
@@ -37,7 +37,7 @@ export default function Studio() {
   const missionStatement2: string =
     "A life-long learner, my dedication to violin has become an invaluable means of setting aside time to ask questions and challenge myself, skills I seek to share with my studio. I am excited to encourage my students to ask their own questions and to share their music with others.";
   const currentLocation: string =
-    "Centrally located near S. Bellaire neighborhood, we offer lessons on site or in  your home.";
+    "Centrally located near downtown Naperville, we offer lessons on site or in  your home.";
   const suzukiMethod1: string =
     "“Musical ability is not an inborn talent but an ability which can be developed. Any child who is properly trained can develop musical ability, just as all children develop the ability to speak their mother tongue. The potential of every child is unlimited.”";
   const suzukiMethod2: string =
